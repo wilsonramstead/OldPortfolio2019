@@ -112,6 +112,13 @@
     .col img {
         width: 60px;
     }
+    .column {
+        width: 40%;
+        margin-left: 10%;
+    }
+    .column img {
+        width: 50%;
+    }
     .frontEnd .col:hover {
         transform: scale(1.1);
     }
@@ -206,7 +213,7 @@
     }
     .website {
         text-align: center;
-        height: 1270px;
+        height: 1400px;
         width: 100%;
         margin-top: 45px;
         font-family: 'Barlow', sans-serif;
@@ -356,6 +363,9 @@
     }
     .frontEnd h5 {
         font-size: 1.25rem;
+    }
+    .website {
+        height: 1500px;
     }
     .icons .entity {
         width: 16%;

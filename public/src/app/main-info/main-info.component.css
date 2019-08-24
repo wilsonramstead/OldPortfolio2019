@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 480px) {
     .wrapper {
-        height: 750px;
+        height: 800px;
         width: 100%;
         background-image: url(https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2692&q=80);
         background-size: cover;
@@ -28,6 +28,7 @@
         font-family: 'Libre Baskerville', serif;
         width: 150px;
         margin-top: 4vh;
+        font-size: 1.5rem;
     }
     .list .primary li {
         list-style: none;
@@ -154,5 +155,11 @@
 @media only screen and (min-width: 860px) {
     .list {
         right: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        height: 900px;
     }
 }
