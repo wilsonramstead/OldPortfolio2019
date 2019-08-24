@@ -1,0 +1,156 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #navbar {
+        display: grid;
+        height: 55px;
+        width: 100vw;
+        position: absolute;
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        background-image: linear-gradient(#424242, #292929);
+    }
+    .nav {
+        text-align: center;
+    }
+    button .navbar-toggler-icon {
+        height: 30px;
+    }
+    .navbar-toggler {
+        position: fixed;
+        left: 23vw;
+        height: 40px;
+        margin-top: 6px;
+    }
+
+    button {
+        margin-left: 20%;
+        position: aboslute;
+        left: 40vw;
+    }
+    .tags {
+        width: 92vw;
+        height: 5vh;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .dropup .dropdown-menu {
+        background-color: #2e2e2e;
+        margin: -20vh 0vw 0vh 0vw;
+        position: fixed;
+        text-align: center;
+        opacity: .95;
+        width: 100vw;
+        bottom: 54px;
+    }
+
+    #navbar a {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.7vh;
+    }
+    #navbar a:hover {
+        color: #1200e7;
+    }
+}
+
+
+@media only screen and (min-width: 481px) {
+    #navbar {
+        display: grid;
+        height: 55px;
+        width: 100vw;
+        position: absolute;
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        background-image: linear-gradient(#424242, #292929);
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    .nav {
+        text-align: center;
+    }
+    button .navbar-toggler-icon {
+        /* margin-top: -20px; */
+        height: 30px;
+        /* margin-top: -2vh; */
+    }
+    .navbar-toggler {
+        /* margin-top: -5vh; */
+        /* margin-top: -2%; */
+        position: fixed;
+        left: 23vw;
+        height: 40px;
+        margin-top: 6px;
+    }
+    .tags {
+        width: 92vw;
+        height: 5vh;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .dropup .dropdown-menu {
+        background-color: #2e2e2e;
+        margin: -20vh 0vw 0vh 0vw;
+        position: fixed;
+        text-align: center;
+        opacity: .95;
+        width: 100vw;
+        bottom: 54px;
+    }
+
+    #navbar a {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.7vh;
+    }
+    #navbar a:hover {
+        color: #1200e7;
+    }
+    button {
+        margin-left: 20%;
+        position: aboslute;
+        left: 40vw;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #navbar {
+        height: 55px;
+        width: 100vw;
+        background-image: linear-gradient(#424242, #292929);
+        position: absolute;
+        z-index: 1;
+        position: sticky;
+        top: 0;
+    }
+    .tags {
+        width: 88vw;
+        height: 5vh;
+        margin: 0px auto;
+        text-align: center;
+    }
+    #navbar a {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 20px;
+    }
+    .openTags li {
+        margin-right: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}

@@ -1,0 +1,317 @@
+
+
+@media only screen and (max-width: 549px) {
+    .projTwoWrapper {
+        height: 1000px;
+        width: 100%;
+        background: radial-gradient(at center, white, #e50915);
+        text-align: center;
+    }
+    .projTwoWrapper img {
+        width: 122px;
+        margin: 30px 0px 30px 0px;
+        transition: all .2s ease-in-out;
+    }
+    .projTwoWrapper .carousel img {
+        width: 335px;
+        margin-left: 12px;
+    }
+    .picsum-img-wrapper img:hover {
+        transform: scale(1.05);
+    }
+    .carousel-caption h3 {
+        color: black;
+    }
+    .content h2 {
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+        margin-bottom: 20px;
+    }
+    .content p {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+        line-height: 2;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+    .content a {
+        margin: 10px;
+        font-size: 16px;
+    }
+    .build {
+        margin: auto;
+        min-height: 50px;
+        padding-top: 3px;
+    }
+    .build h4 {
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .build h4:hover {
+        color: blue;
+    }
+    .tech {
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .backEnd .entity {
+        width: 103%;
+        margin-top: 3px;
+    }
+    .database img {
+        width: 36%;
+    }
+    .col {
+        text-align: center;
+        transition: all .2s ease-in-out;
+        width: 50%;
+        /* margin-left: 10vw; */
+    }
+    .col .aws {
+        height: 13em;
+        border-radius: 50%;
+        border: 4px solid #ff9902;
+    }
+    .label {
+        text-align: center;
+        font-size: 22px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 100vw;
+        margin-top: 5px;
+    }
+    .col .ubuntu {
+        width: 75%;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .projTwoWrapper {
+        height: 900px;
+        width: 100%;
+        background: rgb(92, 215, 255);
+        background: radial-gradient(at center, white, #e50915);
+    }
+    .picsum-img-wrapper {
+        display: inline-block;
+    }
+    .picsum-img-wrapper img {
+        width: 98%;
+        margin: 18% 0% 0% 4%;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        padding-right: 2%;
+        border-radius: 15px 25px 25px 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .picsum-img-wrapper {
+        display: inline-block;
+        margin-top: 58px;
+    }
+    .picsum-img-wrapper img {
+        width: 98%;
+        margin: 18% 0% 0% 4%;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        padding-right: 2%;
+        border-radius: 15px 25px 25px 15px;
+    }
+    .carousel {
+        display: inline-block;
+        width: 39%;
+    }
+    .content {
+        display: inline-block;
+        width: 53%;
+        height: 450px;
+        vertical-align: top;
+        margin-top: 4%;
+        padding-left: 3%;
+        border-left: 2px solid black;
+    }
+    .content h2 {
+        font-size: 38px;
+        font-family: 'Libre Baskerville', serif;
+        display: inline-block;
+    }
+    .content p {
+        margin-top: 3%;
+        margin-left: 8%;
+        margin-bottom: 8%;
+        line-height: 2;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+    .content a {
+        margin: 0% 0% 0% 8%;
+        font-size: 18px;
+    }
+    .build {
+        margin: 30px 0px 10px 20%;
+        min-height: 50px;
+        padding-top: 3px;
+    }
+    .build h4 {
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .build h4:hover {
+        color: blue;
+    }
+    .tech {
+        margin: 0px 0px 50px -10vw;
+    }
+    .frontEnd img {
+        width: 85px;
+    }
+    .backEnd img {
+        width: 85px;
+    }
+    .backEnd .entity {
+        width: 120px;
+        margin-top: -15px;
+    }
+    .database img {
+        width: 85px;
+    }
+    .col {
+        text-align: center;
+    }
+    .col-xs-6 {
+        text-align: center;
+    }
+    .col-xs-12 {
+        text-align: center;
+    }
+    .col-sm-2 {
+        text-align: center;
+    }
+    .col .aws {
+        height: 6.4em;
+        border-radius: 50%;
+        border: 4px solid #ff9902;
+    }
+    .ubuntu {
+        width: 12%;
+        border-radius: 50%;
+    }
+    .label {
+        text-align: center;
+        font-size: 22px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 55vw;
+        margin-top: 5px;
+        margin-left: -2vw;
+    }
+    .col {
+        text-align: center;
+    }
+    .devTools {
+        margin-top: 47px;
+    }
+    .devTools img {
+        width: 70%;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .projTwoWrapper {
+        height: 700px;
+    }
+    .picsum-img-wrapper {
+        display: inline-block;
+    }
+    .picsum-img-wrapper img {
+        width: 98%;
+        margin: 4% 0% 0% 4%;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        padding-right: 2%;
+        border-radius: 15px 25px 25px 15px;
+    }
+    .col .aws {
+        height: 7em;
+        border-radius: 50%;
+    }
+    .ubuntu {
+        width: 12%;
+        border-radius: 50%;
+    }
+    .content a {
+        margin: 0% 0% 0% 23%;
+    }
+    .col {
+        text-align: center;
+    }
+    .devTools img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .projTwoWrapper {
+        height: 600px;
+    }
+    .col .aws {
+        height: 11em;
+        border: 8px solid #ff9902;
+    }
+}

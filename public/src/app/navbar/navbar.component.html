@@ -1,0 +1,42 @@
+
+
+<nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <ul class="navbar-nav mr-auto">
+                <li ngbDropdown placement="top-right" class="nav-item dropdown d-inline-block">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle navbar-toggler-icon" id="dropdownBasic2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <div ngbDropdownMenu class="dropdown-menu show" aria-labelledby="dropdownBasic2">
+                        <a ngbDropdownItem class="dropdown-item" (click)="callParent('main')">About</a>
+                        <a ngbDropdownItem class="dropdown-item" (click)="callParent('portfolio')">Portfolio</a>
+                        <a ngbDropdownItem class="dropdown-item" (click)="callParent('tech')">Technology</a>
+                        <a ngbDropdownItem class="dropdown-item" (click)="callParent('contact')">Contact</a>
+                    </div>
+                </li>
+            </ul>
+    </button> 
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="openTags">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a ngbDropdownItem (click)="callParent('main')" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav list">
+                            <li class="nav-link">
+                                <a (click)="callParent('portfolio')" class="nav-item">Portfolio</a>
+                            </li>
+                            <li class="nav-link">
+                                <a (click)="callParent('tech')" class="nav-item">Technology</a>
+                            </li>
+                            <li class="nav-link">
+                                <a (click)="callParent('contact')" class="nav-item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

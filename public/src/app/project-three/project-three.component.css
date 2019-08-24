@@ -1,0 +1,267 @@
+
+
+@media only screen and (max-width: 549px) {
+    .projThreeWrapper {
+        height: 700px;
+        width: 100%;
+        background: radial-gradient(at center, white, goldenrod);
+        text-align: center;
+    }
+    .projThreeWrapper img {
+        width: 122px;
+        margin: 30px 0px 30px 0px;
+        transition: all .2s ease-in-out;
+    }
+    .projThreeWrapper .carousel img {
+        width: 335px;
+        margin-left: 12px;
+    }
+    .carousel-caption h3 {
+        color: black;
+    }
+    .projThreeWrapper img:hover {
+        transform: scale(1.05);
+    }
+    .content h2 {
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+        margin-bottom: 20px;
+    }
+    .content p {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+        line-height: 2;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+    .content a {
+        margin: 10px;
+        font-size: 16px;
+    }
+    .build {
+        margin: auto;
+        min-height: 50px;
+        padding-top: 3px;
+    }
+    .build h4 {
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .build h4:hover {
+        color: blue;
+    }
+    .tech {
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .backEnd .entity {
+        width: 103%;
+        margin-top: 3px;
+    }
+    .database img {
+        width: 36%;
+    }
+    .col {
+        text-align: center;
+        width: 50%;
+    }
+    .label {
+        text-align: center;
+        font-size: 22px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 100vw;
+        margin-top: 5px;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .projThreeWrapper {
+        height: 900px;
+        width: 100%;
+        background:  radial-gradient( at center, white, goldenrod );
+    }
+    .picsum-img-wrapper {
+        display: inline-block;
+        margin-top: 58px;
+    }
+    .picsum-img-wrapper img {
+        width: 98%;
+        margin: 18% 0% 0% 4%;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        padding-right: 2%;
+        border-radius: 15px 25px 25px 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+    .carousel {
+        display: inline-block;
+        width: 39%;
+    }
+    .carousel-caption h3 {
+        color: black;
+    }
+    .content {
+        display: inline-block;
+        width: 53%;
+        height: 450px;
+        vertical-align: top;
+        margin-top: 4%;
+        padding-left: 3%;
+        border-left: 2px solid black;
+    }
+    .content h2 {
+        font-size: 38px;
+        font-family: 'Libre Baskerville', serif;
+        display: inline-block;
+    }
+    .content p {
+        margin-top: 3%;
+        margin-left: 8%;
+        margin-bottom: 8%;
+        line-height: 2;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+    .content a {
+        font-size: 18px;
+    }
+    .build {
+        margin: 30px 0px 10px 20%;
+        min-height: 50px;
+        padding-top: 3px;
+    }
+    .build h4 {
+        text-align: center;
+        font-size: 16px;
+        color: black;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .build h4:hover {
+        color: blue;
+    }
+    .tech {
+        margin: 0px 0px 50px -10vw;
+    }
+    .frontEnd img {
+        width: 85px;
+    }
+    .backEnd img {
+        width: 85px;
+    }
+    .backEnd .entity {
+        width: 120px;
+        margin-top: -15px;
+    }
+    .database img {
+        width: 85px;
+    }
+    .col-xs-6 {
+        text-align: center;
+    }
+    .col-xs-12 {
+        text-align: center;
+    }
+    .col-sm-2 {
+        text-align: center;
+    }
+    .col {
+        text-align: center;
+        margin: 0% 8% 0% 8%;
+    }
+    .label {
+        text-align: center;
+        font-size: 22px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 55vw;
+        margin-top: 5px;
+        margin-left: -2vw;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .projThreeWrapper {
+        height: 700px;
+    }
+    .build h4 {
+        font-size: 19px;
+        padding: 10px;
+    }
+    .picsum-img-wrapper {
+        display: inline-block;
+    }
+    .picsum-img-wrapper img {
+        width: 98%;
+        margin: 4% 0% 0% 4%;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        padding-right: 2%;
+        border-radius: 15px 25px 25px 15px;
+    }
+
+    .content a {
+        margin-left: 8%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .projThreeWrapper {
+        height: 600px;
+    }
+}

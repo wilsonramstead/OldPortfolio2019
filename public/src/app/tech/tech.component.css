@@ -1,0 +1,376 @@
+
+
+@media only screen and (max-width: 480px) {
+    .techWrapper {
+        width: 100%;
+        min-height: 600px;
+        padding-bottom: 20px;
+        background: #d9d9d9;
+        background: 
+          radial-gradient(
+           at center, white, #5c5c5c
+          );
+    }
+    .techWrapper h2 {
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 10%;
+        font-family: 'Libre Baskerville', sans-serif;
+        color: #292929;
+        font-size: 5vw;
+    }
+    .icons {
+        text-align: center;
+    }
+    .icons img {
+        height: 33%;
+        width: 24%;
+        display: inline-block;
+        margin-left: 2%;
+        margin-bottom: 1%;
+        text-align: center;
+        transition: all .2s ease-in-out;
+    }
+    .icons img:hover {
+        transform: scale(1.1);
+    }
+    .icons .aws {
+        height: 6.4em;
+        border-radius: 50%;
+        border: 8px solid #ff9902;
+    }
+    .col .aws {
+        height: 4em;
+        border-radius: 50%;
+        border: 4px solid #ff9902;
+    }
+    .icons .entity {
+        width: 34%;
+        margin: 0% -5% 0% -3%;
+        display: inline-block;
+    }
+    .website {
+        text-align: center;
+        height: 1850px;
+        width: 100%;
+        margin-top: 45px;
+        font-family: 'Barlow', sans-serif;
+    }
+    .frontEnd {
+        margin-bottom: 50px;
+    }
+    .frontEnd h5 {
+        font-size: 1rem;
+    }
+    .frontEnd button {
+        margin: 20px 0vw -17px 38vw;
+        width: 60px;
+        height: 35px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .content {
+        margin-left: 14%;
+        font-size: 18px;
+    }
+    .frontEnd p {
+        text-align: left;
+        margin-top: 25px;
+    }
+    .backEnd {
+        margin-bottom: 50px;
+    }
+    .backEnd p {
+        font-size: 20px;
+        text-align: left;
+    }
+    .backEnd img {
+        width: 36%;
+    }
+    .database p {
+        font-size: 20px;
+        text-align: left;
+    }
+    .database a {
+        color: #007bfe;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 82vw;
+        margin-left: 11vw;
+    }
+    .moreHr {
+        display: none;
+    }
+    .col {
+        text-align: center;
+        transition: all .2s ease-in-out;
+        width: 50%;
+        margin-left: 10vw;
+    }
+    .col img {
+        width: 60px;
+    }
+    .frontEnd .col:hover {
+        transform: scale(1.1);
+    }
+    .row {
+        width: 75vw;
+        margin-left: 4vw;
+    }
+    .label {
+        text-align: center;
+        margin: 0px 0px -17px 100px;
+        border-radius: 10px 10px 0px 0px;
+        width: 86vw;
+        padding: 5px;
+        margin-left: 7vw;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .techWrapper {
+        width: 100%;
+        min-height: 515px;
+        padding-bottom: 40px;
+        background: #d9d9d9;
+        background: 
+          radial-gradient(
+           at center, white, #5c5c5c
+          );
+    }
+    .techWrapper h2 {
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 10%;
+        font-family: 'Libre Baskerville', sans-serif;
+        color: #292929;
+        font-size: 5vw;
+    }
+    .icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .icons img {
+        height: 33%;
+        width: 19%;
+        display: inline-block;
+        margin-left: 2%;
+        margin-bottom: 1%;
+        text-align: center;
+        transition: all .2s ease-in-out;
+    }
+    .icons img:hover {
+        transform: scale(1.1);
+    }
+    
+    .icons .entity {
+        width: 27%;
+        vertical-align: top;
+        margin: -3.8% -3% 0% -1%;
+        display: inline-block;
+    }
+    .icons .aws {
+        height: 6.4em;
+        border-radius: 50%;
+        border: 8px solid #ff9902;
+    }
+    .col .aws {
+        height: 6.4em;
+        border-radius: 50%;
+        border: 8px solid #ff9902;
+    }
+    .ubuntu {
+        width: 12%;
+        border-radius: 50%;
+    }
+    .website {
+        text-align: center;
+        height: 1270px;
+        width: 100%;
+        margin-top: 45px;
+        font-family: 'Barlow', sans-serif;
+    }
+    .frontEnd {
+        margin-bottom: 50px;
+    }
+    .frontEnd p {
+        text-align: left;
+    }
+    .frontEnd h5 {
+        font-size: 1rem;
+    }
+    .frontEnd button {
+        margin: 18px 0vw -17px 59vw;
+        width: 60px;
+        height: 35px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .backEnd img {
+        width: 175px;
+    }
+    .backEnd .column {
+        margin-left: 22%;
+        transition: all .2s ease-in-out;
+    }
+    .backEnd .column:hover {
+        transform: scale(1.1);
+    }
+    .content {
+        margin-left: 14%;
+        font-size: 18px;
+    }
+    .backEnd {
+        margin-bottom: 50px;
+    }
+    .backEnd p {
+        font-size: 20px;
+        text-align: left;
+    }
+    .database p {
+        font-size: 20px;
+        text-align: left;
+    }
+    .database a {
+        color: #007bfe;
+    }
+    .database a:hover {
+        color: #007bfe;
+        text-decoration: underline;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        width: 82vw;
+        margin-left: 11vw;
+    }
+    .col {
+        text-align: center;
+        transition: all .2s ease-in-out;
+        width: 10%;
+    }
+    .col:hover {
+        transform: scale(1.1);
+    }
+    .col img {
+        width: 60px;
+    }
+    .frontEnd .col:hover {
+        transform: scale(1.1);
+    }
+    .row {
+        width: 75vw;
+        margin-left: 10vw;
+    }
+    .label {
+        margin: 0px 0px -17px 100px;
+        border-radius: 10px 10px 0px 0px;
+        width: 113px;
+        padding: 5px;
+        background-color: #2e2e2e;
+        color: white;
+    }
+    .glow {
+        color: #2e2e2e;
+        text-align: center;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
+    }
+    }
+}
+@media only screen and (min-width: 630px) {
+    /* .website {
+        height: 1270px;
+    } */
+    .techWrapper h2 {
+        padding-top: 5%;
+        margin-bottom: 5%;
+        font-size: 31px;
+    }
+    .icons img {
+        width: 13%;
+    }
+    .icons .entity {
+        width: 18.5%;
+        margin: -2.5% -3% 0% 0%;
+    }
+    .frontEnd button {
+        width: 80px;
+    }
+    .col img {
+        width: 75%;
+    }
+    .row {
+        margin-left: 18vw;
+    }
+    .icons .aws {
+        height: 7em;
+        border-radius: 50%;
+    }
+    .col .aws {
+        height: 7em;
+        border-radius: 50%;
+    }
+    .ubuntu {
+        width: 12%;
+        border-radius: 50%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .techWrapper {
+        min-height: 820px;
+    }
+    .icons img {
+        width: 11%;
+    }
+    .frontEnd h5 {
+        font-size: 1.25rem;
+    }
+    .icons .entity {
+        width: 16%;
+        vertical-align: top;
+        margin: -2.2% -3% 0% -1%;
+        display: inline-block;
+    }
+    .icons .aws {
+        height: 10em;
+    }
+    .content {
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    .col .aws {
+        height: 11em;
+    }
+}
