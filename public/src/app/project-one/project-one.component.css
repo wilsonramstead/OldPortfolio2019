@@ -95,23 +95,6 @@
     .col .ubuntu {
         width: 75%;
     }
-    .glow {
-        color: #2e2e2e;
-        text-align: center;
-        -webkit-animation: glow 2s ease-in-out infinite alternate;
-        -moz-animation: glow 2s ease-in-out infinite alternate;
-        animation: glow 2s ease-in-out infinite alternate;
-      }
-      
-      @-webkit-keyframes glow {
-        from {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
-        }
-        
-        to {
-          text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
-        }
-      }
 }
 
 @media only screen and (min-width: 550px) {
@@ -245,23 +228,6 @@
     .devTools img {
         width: 70%;
     }
-    .glow {
-        color: #2e2e2e;
-        text-align: center;
-        -webkit-animation: glow 2s ease-in-out infinite alternate;
-        -moz-animation: glow 2s ease-in-out infinite alternate;
-        animation: glow 2s ease-in-out infinite alternate;
-      }
-      
-      @-webkit-keyframes glow {
-        from {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9ca3ff, 0 0 20px #9ca3ff, 0 0 25px #9ca3ff, 0 0 30px #9ca3ff, 0 0 35px #9ca3ff;
-        }
-        
-        to {
-          text-shadow: 0 0 10px #fff, 0 0 15px #ddd, 0 0 20px #ddd, 0 0 25px #ddd, 0 0 30px #ddd, 0 0 35px #ddd, 0 0 40px #ddd;
-        }
-      }
 }
 
 @media only screen and (min-width: 850px) {
