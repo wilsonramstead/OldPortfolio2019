@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+<div class="bodyWrapper">
+
+    <ul class="mainList">
+        <li (click)="showList('about')">About</li>
+        <ul *ngIf="listToShow === 'about'" class="nestedList">
+            <li>About Me</li>
+            <li>What I do</li>
+            <li>Education</li>
+            <li>Work Experience</li>
+        </ul>
+        <li (click)="showList('portfolio')">Portfolio</li>
+        <ul *ngIf="listToShow === 'portfolio'" class="nestedList">
+            <li>The Wall</li>
+            <li>Goal Tracker</li>
+            <li>Gameflix</li>
+            <li>This Website!</li>
+        </ul>
+        <li (click)="showList('tech')">Tech</li>
+        <ul *ngIf="listToShow === 'tech'" class="nestedList">
+            <li>My Favorite Tech</li>
+            <!-- <li>What this Website was built with</li> -->
+        </ul>
+        <li>Contact</li>
+    </ul>
+    <div class="display"></div>
+
+    <ul class="backgroundAnimation">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

@@ -18,6 +18,7 @@ import { ProjectTwoComponent } from './project-two/project-two.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ProjectThreeComponent } from './project-three/project-three.component';
 import { ProjectFourComponent } from './project-four/project-four.component';
+import { MainBodyComponent } from './main-body/main-body.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProjectFourComponent } from './project-four/project-four.component';
     ProjectTwoComponent,
     ProjectThreeComponent,
     ProjectFourComponent,
+    MainBodyComponent,
   ],
   imports: [
     BrowserModule,
