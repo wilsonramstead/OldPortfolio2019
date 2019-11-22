@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <div class="bodyWrapper">
-
+    <!-- WIDESCREEN -->
     <ul class="mainList">
         <li (click)="showList('about')">About</li>
         <ul *ngIf="listToShow === 'about'" class="nestedList">
@@ -20,10 +20,39 @@
         <li (click)="showList('tech')">Tech</li>
         <ul *ngIf="listToShow === 'tech'" class="nestedList">
             <li>My Favorite Tech</li>
-            <!-- <li>What this Website was built with</li> -->
         </ul>
         <li>Contact</li>
     </ul>
+
+    <!-- LESS THAN 1024px -->
+    <div class="responsiveNav">
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>About</button>
+            <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button (click)="showPage('aboutMe')" ngbDropdownItem>About Me</button>
+                <button (click)="showPage('whatIDo')" ngbDropdownItem>What I Do</button>
+            </div>
+        </div>
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Portfolio</button>
+            <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button (click)="showPage('aboutMe')" ngbDropdownItem>The Wall</button>
+                <button (click)="showPage('whatIDo')" ngbDropdownItem>Goal Tracker</button>
+                <button (click)="showPage('whatIDo')" ngbDropdownItem>Gameflix</button>
+                <button (click)="showPage('whatIDo')" ngbDropdownItem>This Website!</button>
+            </div>
+        </div>
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Tech</button>
+            <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button (click)="showPage('aboutMe')" ngbDropdownItem>My Favorite Tech</button>
+            </div>
+        </div>
+        <button (click)="showPage('contact')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
+    </div>
+
+    <!-- ------------------------------------------------- -->
+
     <div class="display">
         <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>

@@ -6,7 +6,27 @@
 }
 .aboutMeText {
     color: white;
-    font-size: 26px;
     font-family: 'Barlow', sans-serif;
     line-height: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width:480px) {
+    .aboutMeText {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:481px) {
+    .aboutMeText {
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .info {
+        font-size: 16px;
+    }
+    .aboutMeText {
+        text-align: left;
+        font-size: 26px;
+    }
 }
