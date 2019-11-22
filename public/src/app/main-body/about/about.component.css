@@ -1,0 +1,12 @@
+
+.displayHeader {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.aboutMeText {
+    color: white;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 50px;
+}

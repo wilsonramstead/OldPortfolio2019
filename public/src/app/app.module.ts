@@ -19,6 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ProjectThreeComponent } from './project-three/project-three.component';
 import { ProjectFourComponent } from './project-four/project-four.component';
 import { MainBodyComponent } from './main-body/main-body.component';
+import { AboutComponent } from './main-body/about/about.component';
+import { WhatIDoComponent } from './main-body/what-ido/what-ido.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { MainBodyComponent } from './main-body/main-body.component';
     ProjectThreeComponent,
     ProjectFourComponent,
     MainBodyComponent,
+    AboutComponent,
+    WhatIDoComponent,
   ],
   imports: [
     BrowserModule,

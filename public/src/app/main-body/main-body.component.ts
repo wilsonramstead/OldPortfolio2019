@@ -9,12 +9,17 @@ export class MainBodyComponent implements OnInit {
 
   constructor() { }
   listToShow: any;
+  pageToShow: any;
 
   ngOnInit() {
     this.listToShow = 'about';
+    this.pageToShow = 'aboutMe';
   }
 
   showList(string) {
     this.listToShow = string;
+  }
+  showPage(string) {
+    this.pageToShow = string;
   }
 }

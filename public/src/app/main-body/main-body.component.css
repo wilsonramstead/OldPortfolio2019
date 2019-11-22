@@ -10,7 +10,7 @@
 .mainList {
     height: 40vh;
     width: 20%;
-    font-size: 36px;
+    font-size: 28px;
     color: white;
     list-style: none;
     font-weight: bold;
@@ -24,11 +24,12 @@
 .mainList li:hover {
     transform: scale(1.2);
     cursor: pointer;
+    color: rgb(211, 211, 211);
 }
 .nestedList {
     /* height: 40vh; */
     /* width: 20%; */
-    font-size: 20px;
+    font-size: 16px;
     color: #2e2e2e;
     /* list-style: none; */
     /* font-weight: bold; */
@@ -41,17 +42,23 @@
 .nestedList li:hover {
     transform: scale(1.2);
     cursor: pointer;
+    color: rgb(211, 211, 211);
 }
 .display {
     height: 60vh;
-    width: 65%;
+    width: 70%;
     /* background-color: pink; */
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 25px;
     display: inline-block;
     position: relative;
     left: 10%;
-    top: 15vh;
+    top: 10vh;
+    vertical-align: top;
+    padding: 25px;
+}
+.activePage {
+    color: white;
 }
 .backgroundAnimation li {
     position: absolute;
