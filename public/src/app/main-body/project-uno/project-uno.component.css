@@ -1,0 +1,45 @@
+
+.content {
+    position: relative;
+    color: white;
+    font-size: 22px;
+    font-family: 'Barlow', sans-serif;
+}
+.sourceCode {
+    color: white;
+}
+.wrapper {
+    text-align: center;
+}
+.picsum-img-wrapper img {
+    width: 100%;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+.carousel-caption h3 {
+    color: black;
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+.carousel {
+    margin: 0px auto;
+    height: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+    .carousel {
+        width: 350px;
+    }
+    .content {
+        top: 30px;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .carousel {
+        width: 500px;
+    }
+    .content {
+        top: 120px;
+    }
+}

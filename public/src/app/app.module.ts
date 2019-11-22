@@ -21,6 +21,7 @@ import { ProjectFourComponent } from './project-four/project-four.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { AboutComponent } from './main-body/about/about.component';
 import { WhatIDoComponent } from './main-body/what-ido/what-ido.component';
+import { ProjectUnoComponent } from './main-body/project-uno/project-uno.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { WhatIDoComponent } from './main-body/what-ido/what-ido.component';
     MainBodyComponent,
     AboutComponent,
     WhatIDoComponent,
+    ProjectUnoComponent,
   ],
   imports: [
     BrowserModule,

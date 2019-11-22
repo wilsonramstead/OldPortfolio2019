@@ -5,14 +5,15 @@
     <ul class="mainList">
         <li (click)="showList('about')">About</li>
         <ul *ngIf="listToShow === 'about'" class="nestedList">
-            <li *ngIf="pageToShow === 'aboutMe'" (click)="showPage('aboutMe')" class="activePage">About Me</li>
+            <li *ngIf="pageToShow === 'aboutMe'" class="activePage">About Me</li>
             <li *ngIf="pageToShow != 'aboutMe'"  (click)="showPage('aboutMe')">About Me</li>
-            <li *ngIf="pageToShow === 'whatIDo'" (click)="showPage('whatIDo')" class="activePage">What I do</li>
+            <li *ngIf="pageToShow === 'whatIDo'" class="activePage">What I do</li>
             <li *ngIf="pageToShow != 'whatIDo'" (click)="showPage('whatIDo')">What I do</li>
         </ul>
         <li (click)="showList('portfolio')">Portfolio</li>
         <ul *ngIf="listToShow === 'portfolio'" class="nestedList">
-            <li>The Wall</li>
+            <li *ngIf="pageToShow === 'projectUno'" class="activePage">The Wall</li>
+            <li *ngIf="pageToShow != 'projectUno'" (click)="showPage('projectUno')">The Wall</li>
             <li>Goal Tracker</li>
             <li>Gameflix</li>
             <li>This Website!</li>
@@ -36,10 +37,10 @@
         <div ngbDropdown class="d-inline-block">
             <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Portfolio</button>
             <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button (click)="showPage('aboutMe')" ngbDropdownItem>The Wall</button>
-                <button (click)="showPage('whatIDo')" ngbDropdownItem>Goal Tracker</button>
-                <button (click)="showPage('whatIDo')" ngbDropdownItem>Gameflix</button>
-                <button (click)="showPage('whatIDo')" ngbDropdownItem>This Website!</button>
+                <button (click)="showPage('projectUno')" ngbDropdownItem>The Wall</button>
+                <button (click)="showPage('projectDos')" ngbDropdownItem>Goal Tracker</button>
+                <button (click)="showPage('projectTres')" ngbDropdownItem>Gameflix</button>
+                <button (click)="showPage('thisWebsite')" ngbDropdownItem>This Website!</button>
             </div>
         </div>
         <div ngbDropdown class="d-inline-block">
@@ -50,12 +51,12 @@
         </div>
         <button (click)="showPage('contact')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
     </div>
-
     <!-- ------------------------------------------------- -->
 
     <div class="display">
         <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
+        <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
     </div>
 
     <ul class="backgroundAnimation">
