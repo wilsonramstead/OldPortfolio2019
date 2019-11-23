@@ -1,4 +1,8 @@
 
+.carousel-caption h3 {
+    color: black;
+}
+
 @media only screen and (max-width: 480px) {
     .carousel {
         width: 350px;

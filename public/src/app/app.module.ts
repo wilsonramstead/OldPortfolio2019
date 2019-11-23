@@ -25,6 +25,7 @@ import { ProjectUnoComponent } from './main-body/project-uno/project-uno.compone
 import { ProjectDosComponent } from './main-body/project-dos/project-dos.component';
 import { ProjectTresComponent } from './main-body/project-tres/project-tres.component';
 import { ContactMeComponent } from './main-body/contact-me/contact-me.component';
+import { TechnologyComponent } from './main-body/technology/technology.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ContactMeComponent } from './main-body/contact-me/contact-me.component'
     ProjectDosComponent,
     ProjectTresComponent,
     ContactMeComponent,
+    TechnologyComponent,
   ],
   imports: [
     BrowserModule,

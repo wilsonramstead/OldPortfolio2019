@@ -19,11 +19,12 @@
             <li *ngIf="pageToShow === 'projectTres'" class="activePage">Gameflix</li>
             <li *ngIf="pageToShow != 'projectTres'" (click)="showPage('projectTres')">Gameflix</li>
         </ul>
-        <li (click)="showList('tech')">Tech</li>
-        <ul *ngIf="listToShow === 'tech'" class="nestedList">
+        <li *ngIf="pageToShow === 'tech'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Tech</li>
+        <li *ngIf="pageToShow != 'tech'" (click)="showPage('tech')">Tech</li>
+        <!-- <ul *ngIf="listToShow === 'tech'" class="nestedList">
             <li>My Favorite Tech</li>
-        </ul>
-        <li *ngIf="pageToShow === 'contactMe'" class="activePage">Contact</li>
+        </ul> -->
+        <li *ngIf="pageToShow === 'contactMe'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Contact</li>
         <li *ngIf="pageToShow != 'contactMe'" (click)="showPage('contactMe')">Contact</li>
     </ul>
 
@@ -44,12 +45,13 @@
                 <button (click)="showPage('projectTres')" ngbDropdownItem>Gameflix</button>
             </div>
         </div>
-        <div ngbDropdown class="d-inline-block">
+        <!-- <div ngbDropdown class="d-inline-block">
             <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Tech</button>
             <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
                 <button (click)="showPage('aboutMe')" ngbDropdownItem>My Favorite Tech</button>
             </div>
-        </div>
+        </div> -->
+        <button (click)="showPage('tech')" class="btn btn-outline-primary" id="dropdown1">Tech</button>
         <button (click)="showPage('contactMe')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
     </div>
     <!-- ------------------------------------------------- -->
@@ -61,6 +63,7 @@
         <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
         <app-project-tres *ngIf="pageToShow === 'projectTres'"></app-project-tres>
         <app-contact-me *ngIf="pageToShow === 'contactMe'"></app-contact-me>
+        <app-technology *ngIf="pageToShow === 'tech'"></app-technology>
     </div>
 
     <ul class="backgroundAnimation">
