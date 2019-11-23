@@ -6,11 +6,6 @@
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
 }
-.displayHeader {
-  font-family: 'Libre Baskerville', sans-serif;
-  font-size: 36px;
-  margin: 25px 0px;
-}
 .content {
   position: relative;
   color: white;
@@ -29,7 +24,6 @@
   border: 3px solid white;
 }
 .carousel-caption h3 {
-  color: black;
   position: relative;
   top: 50px;
   width: 100%;
@@ -37,6 +31,20 @@
 .carousel {
   margin: 0px auto;
   height: 200px;
+}
+@media only screen and (max-width: 480px) {
+  .displayHeader {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 33px;
+    margin: 40px 0px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .displayHeader {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 36px;
+    margin: 25px 0px;
+  }
 }
 
 @-webkit-keyframes glow {

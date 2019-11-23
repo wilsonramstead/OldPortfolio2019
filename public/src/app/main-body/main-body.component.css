@@ -130,7 +130,7 @@
 
 @media only screen and (max-width:480px) {
     .bodyWrapper {
-        min-height: 1050px;
+        min-height: 1200px;
     }
     #dropdown1 {
         font-size: 20px;

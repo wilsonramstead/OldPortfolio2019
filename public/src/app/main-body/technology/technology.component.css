@@ -8,19 +8,38 @@ img {
     border-radius: 100%;
     padding: 10px;
     background-color: rgba(190, 190, 190,.5);
+    margin: -15px -15px;
+}
+.blank {
+    display: inline-block;
+    width: 30%;
+    height: 48px;
+    margin: -5px -2px;
 }
 img:hover {
     transform: scale(1.2);
     background-color: rgba(80, 200, 255, 0.5);
+    cursor: pointer;
     /* background-color: rgba(255, 80, 80, 0.5); */
+}
+.mobile {
+    width: 100%;
+    margin: 0px auto;
 }
 @media only screen and (max-width: 480px) {
     .wideScreen {
         display: none;
     }
+    .icons {
+        width: 100%;
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 481px) {
     .mobile {
         display: none;
+    }
+    img {
+        margin: 0px 0px;
     }
 }
