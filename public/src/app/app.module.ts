@@ -22,6 +22,7 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { AboutComponent } from './main-body/about/about.component';
 import { WhatIDoComponent } from './main-body/what-ido/what-ido.component';
 import { ProjectUnoComponent } from './main-body/project-uno/project-uno.component';
+import { ProjectDosComponent } from './main-body/project-dos/project-dos.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ProjectUnoComponent } from './main-body/project-uno/project-uno.compone
     AboutComponent,
     WhatIDoComponent,
     ProjectUnoComponent,
+    ProjectDosComponent,
   ],
   imports: [
     BrowserModule,

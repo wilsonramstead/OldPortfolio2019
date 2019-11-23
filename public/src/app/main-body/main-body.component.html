@@ -14,7 +14,8 @@
         <ul *ngIf="listToShow === 'portfolio'" class="nestedList">
             <li *ngIf="pageToShow === 'projectUno'" class="activePage">The Wall</li>
             <li *ngIf="pageToShow != 'projectUno'" (click)="showPage('projectUno')">The Wall</li>
-            <li>Goal Tracker</li>
+            <li *ngIf="pageToShow === 'projectDos'" class="activePage">Goal Tracker</li>
+            <li *ngIf="pageToShow != 'projectDos'" (click)="showPage('projectDos')">Goal Tracker</li>
             <li>Gameflix</li>
             <li>This Website!</li>
         </ul>
@@ -57,6 +58,7 @@
         <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
         <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
+        <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
     </div>
 
     <ul class="backgroundAnimation">
