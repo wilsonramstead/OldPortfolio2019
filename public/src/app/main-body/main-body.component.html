@@ -23,7 +23,8 @@
         <ul *ngIf="listToShow === 'tech'" class="nestedList">
             <li>My Favorite Tech</li>
         </ul>
-        <li>Contact</li>
+        <li *ngIf="pageToShow === 'contactMe'" class="activePage">Contact</li>
+        <li *ngIf="pageToShow != 'contactMe'" (click)="showPage('contactMe')">Contact</li>
     </ul>
 
     <!-- LESS THAN 1024px -->
@@ -49,7 +50,7 @@
                 <button (click)="showPage('aboutMe')" ngbDropdownItem>My Favorite Tech</button>
             </div>
         </div>
-        <button (click)="showPage('contact')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
+        <button (click)="showPage('contactMe')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
     </div>
     <!-- ------------------------------------------------- -->
 
@@ -59,6 +60,7 @@
         <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
         <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
         <app-project-tres *ngIf="pageToShow === 'projectTres'"></app-project-tres>
+        <app-contact-me *ngIf="pageToShow === 'contactMe'"></app-contact-me>
     </div>
 
     <ul class="backgroundAnimation">

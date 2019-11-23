@@ -1,0 +1,49 @@
+
+.icons {
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .icons img {
+        width: 50%;
+        margin: 20px auto;
+        border-radius: 40px;
+        border: 2px solid white;
+        display: block;
+    }
+    .icons img:nth-child(1) {
+        margin-top: 50px;
+    }
+    .icons p {
+        margin-bottom: 80px;
+        color: white;
+        font-size: 26px;
+        font-family: 'Libre Baskerville', serif;
+    } 
+}
+@media only screen and (min-width: 481px) {
+    .block {
+        display: inline-block;
+        width: 25%;
+        margin: 100px 4%;
+        transition: .2s all ease-in-out;
+    }
+    .icons img {
+        width: 100%;
+        border-radius: 40px;
+        border: 2px solid white;
+    }
+    .icons p {
+        margin-top: 10px;
+        color: white;
+        font-size: 26px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .block:hover {
+        transform: scale(1.1);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .block {
+        width: 20%;
+    }
+}
