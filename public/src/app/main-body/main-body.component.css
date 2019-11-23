@@ -175,6 +175,9 @@
     .mainList {
         display: none;
     }
+    .dropList button:hover {
+        background-color: rgba(37, 68, 243, .8)
+    }
 }
 @media only screen and (min-width:1024px) {
     .bodyWrapper {

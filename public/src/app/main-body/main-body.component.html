@@ -16,8 +16,8 @@
             <li *ngIf="pageToShow != 'projectUno'" (click)="showPage('projectUno')">The Wall</li>
             <li *ngIf="pageToShow === 'projectDos'" class="activePage">Goal Tracker</li>
             <li *ngIf="pageToShow != 'projectDos'" (click)="showPage('projectDos')">Goal Tracker</li>
-            <li>Gameflix</li>
-            <li>This Website!</li>
+            <li *ngIf="pageToShow === 'projectTres'" class="activePage">Gameflix</li>
+            <li *ngIf="pageToShow != 'projectTres'" (click)="showPage('projectTres')">Gameflix</li>
         </ul>
         <li (click)="showList('tech')">Tech</li>
         <ul *ngIf="listToShow === 'tech'" class="nestedList">
@@ -41,7 +41,6 @@
                 <button (click)="showPage('projectUno')" ngbDropdownItem>The Wall</button>
                 <button (click)="showPage('projectDos')" ngbDropdownItem>Goal Tracker</button>
                 <button (click)="showPage('projectTres')" ngbDropdownItem>Gameflix</button>
-                <button (click)="showPage('thisWebsite')" ngbDropdownItem>This Website!</button>
             </div>
         </div>
         <div ngbDropdown class="d-inline-block">
@@ -59,6 +58,7 @@
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
         <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
         <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
+        <app-project-tres *ngIf="pageToShow === 'projectTres'"></app-project-tres>
     </div>
 
     <ul class="backgroundAnimation">
