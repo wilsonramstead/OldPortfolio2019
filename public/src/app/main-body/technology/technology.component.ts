@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TechnologyComponent implements OnInit {
 
   constructor() { }
+  showTech:any;
 
   ngOnInit() {
+    this.showTech = 'temp';
+  }
+  changeTech(string) {
+    this.showTech = string;
+    console.log('showTech: ', this.showTech);
   }
 
 }

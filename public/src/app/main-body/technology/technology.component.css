@@ -26,6 +26,36 @@ img:hover {
     width: 100%;
     margin: 0px auto;
 }
+
+.tempIcon {
+    text-align: left;
+    background-color: rgba(190, 190, 190,.5);
+    border: 3px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.techText {
+    width: 75%;
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.techText p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.definition {
+    margin-left: 5%;
+    width: 90%;
+    line-height: 1;
+}
+.techText hr {
+    margin-bottom: 0px;
+    margin-top: -5px;
+    background: #818181;
+}
 @media only screen and (max-width: 480px) {
     .wideScreen {
         display: none;
@@ -34,6 +64,9 @@ img:hover {
         width: 100%;
         text-align: center;
     }
+    .techInfo {
+        display: none;
+    }
 }
 @media only screen and (min-width: 481px) {
     .mobile {
@@ -41,5 +74,46 @@ img:hover {
     }
     img {
         margin: 0px 0px;
+    }
+    .icons {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .techText h3 {
+        font-size: 1.4rem;
+    }
+    .techText p {
+        font-size: 10px;
+    }
+    .tempIcon {
+        height: 100%;
+        width: 75px;
+    }
+}
+@media only screen and (min-width: 780px) {
+    .tempIcon {
+        height: 90px;
+        width: 90px;
+    }
+    .techText h3 {
+        font-size: 1.25rem;
+    }
+    .techText p {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .icons {
+        width: 90%;
+    }
+    .tempIcon {
+        height: 132px;
+        width: 132px;
+    }
+    .techText h3 {
+        font-size: 1.75rem;
+    }
+    .techText p {
+        font-size: 14px;
     }
 }
