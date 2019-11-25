@@ -134,18 +134,9 @@
     left: 25%;
     width: 90px;
     height: 90px;
-    animation-delay: 14s;
+    animation-delay: 16s;
 }
-@keyframes animate {
-    0% {
-        transform: translateY(-900px) scale(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100px) scale(2.5);
-        opacity: 0;
-    }
-}
+
 
 @media only screen and (max-width:480px) {
     .bodyWrapper {
@@ -169,6 +160,34 @@
     .widescreenOnly {
         display: none;
     }
+    .hide {
+        display: none;
+    }
+    .backgroundAnimation li:nth-child(4) {
+        display: none;
+    }
+    .backgroundAnimation li:nth-child(9) {
+        display: none;
+    }
+    .backgroundAnimation li:nth-child(10) {
+        display: none;
+    }
+    .backgroundAnimation li:nth-child(8) {
+        display: none;
+    }
+    .backgroundAnimation li:nth-child(7) {
+        display: none;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateY(-1125px) scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-200px) scale(2.5);
+            opacity: 0;
+        }
+    }
 }
 @media only screen and (min-width:481px) {
     .bodyWrapper {
@@ -189,6 +208,16 @@
     .dropList button:hover {
         background-color: rgba(37, 68, 243, .8)
     }
+    @keyframes animate {
+        0% {
+            transform: translateY(-850px) scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-200px) scale(2.5);
+            opacity: 0;
+        }
+    }
 }
 @media only screen and (min-width:1024px) {
     .bodyWrapper {
@@ -207,7 +236,6 @@
         top: 0;
         font-size: 28px;
         color: white;
-        /* list-style: none; */
         font-weight: bold;
         font-family: 'Libre Baskerville', serif;
         display: inline-block;
@@ -234,7 +262,6 @@
         margin: 20px 0px;
         font-size: 16px;
         width: 150px;
-        /* list-style: circle; */
     }
     .nestedList li:hover {
         transform: scale(1.2);
@@ -251,5 +278,15 @@
         top: 10vh;
         vertical-align: top;
         padding: 25px;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateY(-950px) scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100px) scale(2.5);
+            opacity: 0;
+        }
     }
 }
