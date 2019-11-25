@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectTresComponent implements OnInit {
 
   constructor() { }
+  showTech: any;
 
   ngOnInit() {
+    this.showTech = false;
   }
 
+  swap(bool) {
+    this.showTech = bool;
+  }
 }

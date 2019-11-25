@@ -2,45 +2,106 @@
 
 <div class="wrapper">
     <h1 class="glow displayHeader">Goal Tracker</h1>
-    <a href="https://github.com/wilsonramstead/GoalTracker" target="_blank" class="sourceCode">View Source Code</a>
-    <div class="carousel">
-        <ngb-carousel style="width: 96%;">
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/gtGoalsPage.png" alt="The Wall Main">
-            </div>
-            <div class="carousel-caption">
-                <h3>Goals Page</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/gtNewGoal.png" alt="User Main Feed">
-            </div>
-            <div class="carousel-caption">
-                <h3>New Goal</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/gtCalendar1.png" alt="Account Page">
-            </div>
-            <div class="carousel-caption">
-                <h3>Calendar</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/gtCalendar2.png" alt="DM Page">
-            </div>
-            <div class="carousel-caption">
-                <h3>Bitch</h3>
-            </div>
-            </ng-template>
-        </ngb-carousel>
+    <a href="https://github.com/wilsonramstead/GoalTracker" target="_blank" class="sourceCode">Source Code</a>
+    <p class="seperator"> | </p>
+    <p *ngIf="showTech === true" (click)="swap(false)" class="sourceCode">Back</p>
+    <p *ngIf="showTech === false" (click)="swap(true)" class="sourceCode">Technologies</p>
+    <div *ngIf="showTech === false">
+        <div class="carousel">
+            <ngb-carousel style="width: 96%;">
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/gtGoalsPage.png" alt="The Wall Main">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Goals Page</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/gtNewGoal.png" alt="User Main Feed">
+                </div>
+                <div class="carousel-caption">
+                    <h3>New Goal</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/gtCalendar1.png" alt="Account Page">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Calendar</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/gtCalendar2.png" alt="DM Page">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Bitch</h3>
+                </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="content">
+            <!-- <p>Website for users to track the daily progress of custom goals with custom data, via a calendar. Website built for real personal use and benefit, but also as a playground to push my Angular and backend knowledge. Experimented with new frontend UI and user experience features. Auto updating features and unique backend logic applied. Built with Angular, Express, MongoDB and Node.</p> -->
+            <p>Website originally created for real personal use, and to save paper... But also as a way to further my experience with front-end styling and animations. Advanced backend logic applied through unique functions, from auto updating unassigned days to figuring out the specefic day of week per each month day - dynamically.</p>
+        </div>
     </div>
-    <div class="content">
-        <!-- <p>Website for users to track the daily progress of custom goals with custom data, via a calendar. Website built for real personal use and benefit, but also as a playground to push my Angular and backend knowledge. Experimented with new frontend UI and user experience features. Auto updating features and unique backend logic applied. Built with Angular, Express, MongoDB and Node.</p> -->
-        <p>Website originally created for real personal use, and to save paper... But also as a way to further my experience with front-end styling and animations. Advanced backend logic applied through unique functions, from auto updating unassigned days to figuring out the specefic day of week per each month day - dynamically.</p>
+    <div *ngIf="showTech === true" class="projectTech">
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Front End</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/HTML.png" alt="HTML icon">
+                    <h6 class="blockHead">HTML</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/CSS.png" alt="CSS icon">
+                    <h6 class="blockHead">CSS</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/JavaScript.png" alt="Javascript icon">
+                    <h6 class="blockHead">Javascript</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/angular.png" alt="Angular icon">
+                    <h6 class="blockHead">Angular</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/bootstrap.png" alt="Bootstrap icon">
+                    <h6 class="blockHead">Bootstrap</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/jQuery.png" alt="Jquery icon">
+                    <h6 class="blockHead">jQuery</h6>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Back End</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/nodejs.png" alt="Node icon">
+                    <h6 class="blockHead">Node.js</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/expressjs.png" alt="Express icon">
+                    <h6 class="blockHead">Express.js</h6>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Database</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/mongodb.png" alt="MongoDB icon">
+                    <h6 class="blockHead">MongoDB</h6>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

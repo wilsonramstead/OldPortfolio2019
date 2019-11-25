@@ -9,6 +9,9 @@
     .content {
         top: 30px;
     }
+    .icons {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 481px) {
     .carousel {
@@ -16,5 +19,13 @@
     }
     .content {
         top: 120px;
+    }
+    .icons {
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .icons {
+        width: 88%;
     }
 }

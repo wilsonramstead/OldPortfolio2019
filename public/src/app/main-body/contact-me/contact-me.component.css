@@ -28,7 +28,7 @@
     } 
 }
 @media only screen and (min-width: 481px) {
-    .block {
+    .third {
         display: inline-block;
         width: 25%;
         margin: 100px 4%;
@@ -40,7 +40,7 @@
         border: 8px solid white;
         background-color: rgba(190, 190, 190,.5);
     }
-    .block:nth-child(3) {
+    .third:nth-child(3) {
         filter: grayscale(100%) contrast(150%);
     }
     .icons p {
@@ -49,12 +49,12 @@
         font-size: 26px;
         font-family: 'Libre Baskerville', serif;
     }
-    .block:hover {
+    .third:hover {
         transform: scale(1.1);
     }
 }
 @media only screen and (min-width: 1024px) {
-    .block {
+    .third {
         width: 20%;
     }
 }

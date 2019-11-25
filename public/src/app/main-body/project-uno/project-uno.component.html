@@ -2,52 +2,105 @@
 
 <div class="wrapper">
     <h1 class="glow displayHeader">The Wall</h1>
-    <a href="https://github.com/wilsonramstead/theWall" target="_blank" class="sourceCode">View Source Code</a>
-    <div class="carousel">
-        <ngb-carousel style="width: 96%;">
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/theWallMain.png" alt="The Wall Main">
-            </div>
-            <div class="carousel-caption">
-                <h3>Login/Register</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/theWallMainFeed.png" alt="User Main Feed">
-            </div>
-            <div class="carousel-caption">
-                <h3>Public Feed</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/theWallAccount.png" alt="Account Page">
-            </div>
-            <div class="carousel-caption">
-                <h3>Account Page</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img src="assets/imgs/projectPics/theWallDM.png" alt="DM Page">
-            </div>
-            <div class="carousel-caption">
-                <h3>Direct Messaging</h3>
-            </div>
-            </ng-template>
-            <ng-template ngbSlide>
+    <a href="https://github.com/wilsonramstead/theWall" target="_blank" class="sourceCode">Source Code</a>
+    <p class="seperator"> | </p>
+    <p *ngIf="showTech === true" (click)="swap(false)" class="sourceCode">Go Back</p>
+    <p *ngIf="showTech === false" (click)="swap(true)" class="sourceCode">Technologies</p>
+    <div *ngIf="showTech === false">
+        <div class="carousel">
+            <ngb-carousel style="width: 96%;">
+                <ng-template ngbSlide>
                 <div class="picsum-img-wrapper">
-                    <img src="assets/imgs/projectPics/theWallGroupFeed.png" alt="DM Page">
+                    <img src="assets/imgs/projectPics/theWallMain.png" alt="The Wall Main">
                 </div>
                 <div class="carousel-caption">
-                    <h3>Private Groups</h3>
+                    <h3>Login/Register</h3>
                 </div>
                 </ng-template>
-        </ngb-carousel>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/theWallMainFeed.png" alt="User Main Feed">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Public Feed</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/theWallAccount.png" alt="Account Page">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Account Page</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/imgs/projectPics/theWallDM.png" alt="DM Page">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Direct Messaging</h3>
+                </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img src="assets/imgs/projectPics/theWallGroupFeed.png" alt="DM Page">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Private Groups</h3>
+                    </div>
+                    </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="content">
+            <p>A website where users can register an account and create posts to a public wall. Users can comment on other users posts, and visit their customized account page. Users have a network feature to list all users they are and are not connected to. Users can have private direct message conversations with other users, and create a private wall with a group of their connections.</p>
+        </div>
     </div>
-    <div class="content">
-        <p>A website where users can register an account and create posts to a public wall. Users can comment on other users posts, and visit their customized account page. Users have a network feature to list all users they are and are not connected to. Users can have private direct message conversations with other users, and create a private wall with a group of their connections.</p>
+    <div *ngIf="showTech === true" class="projectTech">
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Front End</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/HTML.png" alt="HTML icon">
+                    <h6 class="blockHead">HTML</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/CSS.png" alt="CSS icon">
+                    <h6 class="blockHead">CSS</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/JavaScript.png" alt="Javascript icon">
+                    <h6 class="blockHead">Javascript</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/bootstrap.png" alt="Bootstrap icon">
+                    <h6 class="blockHead">Bootstrap</h6>
+                </div>
+                <div class="block">
+                    <img src="assets/imgs/icons/jQuery.png" alt="Jquery icon">
+                    <h6 class="blockHead">jQuery</h6>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Back End</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/c-sharp.png" alt="C# .NET icon">
+                    <h6 class="blockHead">ASP.NET Core</h6>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="techTitle"><h4 class="techHead">Database</h4></div>
+            <hr>
+            <div class="icons">
+                <div class="block">
+                    <img src="assets/imgs/icons/mysql.png" alt="MySQL icon">
+                    <h6 class="blockHead">MySQL</h6>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

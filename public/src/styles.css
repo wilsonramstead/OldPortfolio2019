@@ -14,6 +14,21 @@
 }
 .sourceCode {
   color: white;
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+}
+.seperator {
+  color: #007bfe;
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 0px 4px;
+}
+.sourceCode:hover {
+  color: #007bfe;
+  text-decoration: underline;
 }
 .wrapper {
   text-align: center;
@@ -32,11 +47,59 @@
   margin: 0px auto;
   height: 200px;
 }
+.techTitle {
+  font-family: 'Libre Baskerville', sans-serif;
+  border-top: 2px solid black;
+  text-align: center;
+  border-radius: 50%;
+}
+.techHead {
+  background-color: rgba(255, 255, 255, 0.377);
+  /* background-color: rgba(0, 0, 0, 0.404); */
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0px 0px 15px 15px;
+  padding: 6px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+}
+.icons {
+  display: inline-block;
+}
+.block {
+  display: inline-block;
+  width: 16%;
+  transition: .2s all ease-in-out;
+}
+.blockHead {
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.section {
+  margin-top: 20px;
+}
+.section p {
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 480px) {
   .displayHeader {
     font-family: 'Libre Baskerville', sans-serif;
     font-size: 33px;
     margin: 40px 0px;
+  }
+  .block img {
+      width: 100%;
+  }
+  .title h4 {
+      background-color: rgba(0, 0, 0, 0.404);
   }
 }
 @media only screen and (min-width: 481px) {
@@ -44,6 +107,27 @@
     font-family: 'Libre Baskerville', sans-serif;
     font-size: 36px;
     margin: 25px 0px;
+  }
+  .block img {
+    width: 90%;
+  }
+  .blockHead {
+      font-size: 14px;
+  }
+  .section p {
+      font-size: 16px;
+  }
+  .title h4 {
+      background-color: rgba(255, 255, 255, 0.377);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .blockHead {
+      font-size: 18px;
+      font-weight: 500;
+  }
+  .section p {
+      font-size: 18px;
   }
 }
 

@@ -1,6 +1,11 @@
 .carousel-caption h3 {
     color: white;
 }
+.block {
+    display: inline-block;
+    width: 16%;
+    transition: .2s all ease-in-out;
+}
 
 @media only screen and (max-width: 480px) {
     .carousel {
@@ -9,6 +14,9 @@
     .content {
         top: 30px;
     }
+    .icons {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 481px) {
     .carousel {
@@ -16,5 +24,13 @@
     }
     .content {
         top: 120px;
+    }
+    .icons {
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .icons {
+        width: 88%;
     }
 }

@@ -60,7 +60,7 @@ img:hover {
     .wideScreen {
         display: none;
     }
-    .icons {
+    .logos {
         width: 100%;
         text-align: center;
     }
@@ -75,7 +75,7 @@ img:hover {
     img {
         margin: 0px 0px;
     }
-    .icons {
+    .logos {
         width: 90%;
         margin: 0px auto;
     }
