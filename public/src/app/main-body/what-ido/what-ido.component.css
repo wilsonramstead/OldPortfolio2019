@@ -54,6 +54,7 @@
         line-height: 1;
         font-size: 14px;
         font-weight: 600;
+        text-align: left;
     }
     .cube {
         height: 75px;

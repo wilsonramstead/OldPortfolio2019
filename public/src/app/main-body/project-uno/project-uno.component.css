@@ -2,16 +2,28 @@
 .carousel-caption h3 {
     color: black;
 }
-
+.block {
+    display: inline-block;
+    width: 16%;
+    transition: .2s all ease-in-out;
+}
+.block:hover {
+    transform: scale(1.1);
+}
 @media only screen and (max-width: 480px) {
     .carousel {
-        width: 350px;
+        width: 300px;
+        margin: 0px auto;
     }
     .content {
         top: 30px;
     }
     .icons {
         width: 100%;
+    }
+    .block {
+        width: 26%;
+        margin: 0px 5px;
     }
 }
 @media only screen and (min-width: 481px) {
@@ -23,6 +35,9 @@
     }
     .icons {
         width: 95%;
+    }
+    .block {
+        width: 16%;
     }
 }
 @media only screen and (min-width: 1024px) {

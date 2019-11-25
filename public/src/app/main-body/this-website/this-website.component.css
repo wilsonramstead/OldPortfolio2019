@@ -10,14 +10,22 @@
 .block:hover {
     transform: scale(1.1);
 }
+
 @media only screen and (max-width: 480px) {
     .icons {
         width: 100%;
+    }
+    .block {
+        width: 26%;
+        margin: 0px 5px;
     }
 }
 @media only screen and (min-width: 481px) {
     .icons {
         width: 95%;
+    }
+    .block {
+        width: 16%;
     }
 }
 @media only screen and (min-width: 1024px) {
