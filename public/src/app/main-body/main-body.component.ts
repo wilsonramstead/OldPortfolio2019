@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-main-body',
@@ -14,6 +15,12 @@ export class MainBodyComponent implements OnInit {
   ngOnInit() {
     this.listToShow = 'about';
     this.pageToShow = 'aboutMe';
+    $(function () {
+      $(document).scroll(function(){
+        var $nav = $(".responsiveNav");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > ($(window).height() + 10));
+      });
+    });
   }
 
   showList(string) {
@@ -22,4 +29,5 @@ export class MainBodyComponent implements OnInit {
   showPage(string) {
     this.pageToShow = string;
   }
+
 }

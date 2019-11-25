@@ -19,11 +19,17 @@
             <li *ngIf="pageToShow === 'projectTres'" class="activePage">Gameflix</li>
             <li *ngIf="pageToShow != 'projectTres'" (click)="showPage('projectTres')">Gameflix</li>
         </ul>
-        <li *ngIf="pageToShow === 'tech'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Tech</li>
-        <li *ngIf="pageToShow != 'tech'" (click)="showPage('tech')">Tech</li>
-        <!-- <ul *ngIf="listToShow === 'tech'" class="nestedList">
-            <li>My Favorite Tech</li>
-        </ul> -->
+
+        <!-- <li *ngIf="pageToShow === 'tech'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Tech</li> -->
+        <!-- <li *ngIf="pageToShow != 'tech'" (click)="showPage('tech')">Tech</li> -->
+        <li (click)="showList('tech')">Tech</li>
+        <ul *ngIf="listToShow === 'tech'" class="nestedList">
+            <li *ngIf="pageToShow === 'favoriteTech'" class="activePage">My Favorite Tech</li>
+            <li *ngIf="pageToShow != 'favoriteTech'" (click)="showPage('favoriteTech')">My Favorite Tech</li>
+            <li *ngIf="pageToShow === 'thisWebsite'" class="activePage">This Website</li>
+            <li *ngIf="pageToShow != 'thisWebsite'" (click)="showPage('thisWebsite')">This Website</li>
+        </ul>
+
         <li *ngIf="pageToShow === 'contactMe'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Contact</li>
         <li *ngIf="pageToShow != 'contactMe'" (click)="showPage('contactMe')">Contact</li>
     </ul>
@@ -45,13 +51,13 @@
                 <button (click)="showPage('projectTres')" ngbDropdownItem>Gameflix</button>
             </div>
         </div>
-        <!-- <div ngbDropdown class="d-inline-block">
+        <div ngbDropdown class="d-inline-block">
             <button class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Tech</button>
             <div class="dropList" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button (click)="showPage('aboutMe')" ngbDropdownItem>My Favorite Tech</button>
+                <button (click)="showPage('favoriteTech')" ngbDropdownItem>My Favorite Tech</button>
+                <button (click)="showPage('thisWebsite')" ngbDropdownItem>This Website</button>
             </div>
-        </div> -->
-        <button (click)="showPage('tech')" class="btn btn-outline-primary" id="dropdown1">Tech</button>
+        </div>
         <button (click)="showPage('contactMe')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
     </div>
     <!-- ------------------------------------------------- -->
@@ -63,7 +69,8 @@
         <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
         <app-project-tres *ngIf="pageToShow === 'projectTres'"></app-project-tres>
         <app-contact-me *ngIf="pageToShow === 'contactMe'"></app-contact-me>
-        <app-technology *ngIf="pageToShow === 'tech'"></app-technology>
+        <app-technology *ngIf="pageToShow === 'favoriteTech'"></app-technology>
+        <app-this-website *ngIf="pageToShow === 'thisWebsite'"></app-this-website>
     </div>
 
     <ul class="backgroundAnimation">
@@ -73,11 +80,13 @@
         <li></li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <!-- <div class="widescreenOnly"> -->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        <!-- </div> -->
     </ul>
 </div>

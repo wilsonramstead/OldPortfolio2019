@@ -76,14 +76,20 @@ img:hover {
         margin: 0px 0px;
     }
     .icons {
-        width: 80%;
+        width: 90%;
         margin: 0px auto;
+    }
+    .techInfo {
+        color: white;
+        text-align: center;
     }
     .techText h3 {
         font-size: 1.4rem;
+        text-align: left;
     }
     .techText p {
         font-size: 10px;
+        text-align: left;
     }
     .tempIcon {
         height: 100%;

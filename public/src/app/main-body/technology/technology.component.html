@@ -1,29 +1,29 @@
 
 <h1 class="glow displayHeader">My Favorite Tech</h1>
 <div class="icons">
-    <div class="wideScreen">
+    <div class="wideScreen" style="text-align: center">
         <div class="row">
             <img (click)="changeTech('html')" src="assets/imgs/icons/HTML.png" class="col-2 col-sm-2" alt="HTML icon">
             <img (click)="changeTech('css')" src="assets/imgs/icons/CSS.png" class="col-2 col-sm-2" alt="CSS icon">
             <img (click)="changeTech('javascript')" src="assets/imgs/icons/JavaScript.png" class="col-2 col-sm-2" alt="JavaScript icon">
+        </div>
+        <div class="row">
             <img (click)="changeTech('bootstrap')" src="assets/imgs/icons/bootstrap.png" class="col-2 col-sm-2" alt="Bootstrap icon">
             <img (click)="changeTech('jquery')" src="assets/imgs/icons/jQuery.png" class="col-2 col-sm-2" alt="jQuery icon">
             <img (click)="changeTech('ajax')" src="assets/imgs/icons/ajax.png" class="col-2 col-sm-2" alt="Ajax icon">
-        </div>
-        <div class="row" style="text-align: center">
             <img (click)="changeTech('angular')" src="assets/imgs/icons/angular.png" class="col-2 col-sm-2" alt="angular icon">
+        </div>
+        <div class="row">
             <img (click)="changeTech('mean')" src="assets/imgs/icons/MEAN.png" class="col-2 col-sm-2" alt="MEAN icon">
             <img (click)="changeTech('node')" src="assets/imgs/icons/nodejs.png" class="col-2 col-sm-2" alt="nodejs icon">
             <img (click)="changeTech('express')" src="assets/imgs/icons/expressjs.png" class="col-2 col-sm-2" alt="expressjs icon">
             <img (click)="changeTech('mongodb')" src="assets/imgs/icons/mongodb.png" class="col-2 col-sm-2" alt="mongodb icon">
-        </div>
-        <div class="row" style="text-align: center">
             <img (click)="changeTech('c#')" src="assets/imgs/icons/c-sharp.png" class="col-2 col-sm-2" alt="c# icon">
+        </div>
+        <div class="row">
             <img (click)="changeTech('python')" src="assets/imgs/icons/python.png" class="col-2 col-sm-2" alt="python icon">
             <img (click)="changeTech('django')" src="assets/imgs/icons/django.png" class="col-2 col-sm-2" alt="django icon">
             <img (click)="changeTech('mysql')" src="assets/imgs/icons/mysql.png" class="col-2 col-sm-2" alt="mysql icon">
-        </div>
-        <div class="row" style="text-align: center;">
             <img (click)="changeTech('sqlite')" src="assets/imgs/icons/sqlite.png" class="col-2 col-sm-2" alt="sqlite icon">
             <img (click)="changeTech('ubuntu')" class="ubuntu" src="assets/imgs/icons/ubuntu.png" class="col-2 col-sm-2" alt="ubuntu icon">
             <img (click)="changeTech('github')" src="assets/imgs/icons/github.png" class="col-2 col-sm-2" alt="github icon">
@@ -69,9 +69,10 @@
     </div>
 </div>
 <div class="techInfo">
-    <h3 *ngIf="showTech === 'temp'" style="text-align: center; color: white;">Click a technology to learn more!</h3>
-
+    <hr>
+    <h3 *ngIf="showTech === 'temp'">Click a technology to learn more!</h3>
     <img *ngIf="showTech === 'html'" src="assets/imgs/icons/HTML.png" class="tempIcon" alt="HTML icon">
+
     <div *ngIf="showTech === 'html'" class="techText">
         <h3>HTML</h3>
         <hr>
@@ -117,7 +118,7 @@
     <div *ngIf="showTech === 'angular'" class="techText">
         <h3>Angular</h3>
         <hr>
-        <p>Angular is a framework for creating single page, front-end applications with HTML and Typescript. The power of Angular is its ability to update it's single page, with many components. Rather than linking to seperate pages to display other content, the desired components get exchanged; without having to reload the page.</p>
+        <p>Angular is a framework for creating single page, front-end applications with HTML and Typescript. The power of Angular is its ability to update a single page with many seperate components. Rather than routing and rendering seperate pages to display different content, the desired components get exchanged; without having to reload the page.</p>
     </div>
 
     <img *ngIf="showTech === 'mean'" src="assets/imgs/icons/MEAN.png" class="tempIcon" alt="mean icon">

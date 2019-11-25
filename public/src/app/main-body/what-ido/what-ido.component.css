@@ -16,6 +16,10 @@
     z-index: 2;
     position: relative;
 }
+.title {
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Libre Baskerville', sans-serif;
+}
 .cube span {
     display: block;
     width: 100%;
@@ -25,15 +29,15 @@
 }
 .cube span:nth-child(1) {
     transform: rotate(-45deg) skew(15deg, 15deg);
-    border: 1px solid rgb(100, 100, 100);
+    /* border: 2px solid rgb(0, 225, 255); */
 }
 .cube span:nth-child(2) {
     transform: rotate(15deg) skew(15deg, 15deg);
-    border: 1px solid rgb(100, 100, 100);
+    /* border: 2px solid #d91dff; */
 }
 .cube span:nth-child(3) {
     transform: rotate(-15deg) skew(-15deg, -15deg);
-    border: 1px solid rgb(100, 100, 100);
+    /* border: 2px solid lime; */
 }
 @media only screen and (max-width:480px) {
     .block {

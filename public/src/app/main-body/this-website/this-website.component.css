@@ -1,0 +1,87 @@
+
+.title {
+    font-family: 'Libre Baskerville', sans-serif;
+    border-top: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+}
+.title h4 {
+    background-color: rgba(255, 255, 255, 0.377);
+    /* background-color: rgba(0, 0, 0, 0.404); */
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0px 0px 15px 15px;
+    padding: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+.icons {
+    display: inline-block;
+}
+.block {
+    display: inline-block;
+    width: 16%;
+    transition: .2s all ease-in-out;
+}
+.block:hover {
+    transform: scale(1.1);
+}
+
+.block h6 {
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.section {
+    margin-top: 50px;
+}
+.section p {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+    .block img {
+        width: 100%;
+    }
+    .icons {
+        width: 100%;
+    }
+    .title h4 {
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+}
+@media only screen and (min-width: 481px) {
+    .block img {
+        width: 90%;
+    }
+    .block h6 {
+        font-size: 14px;
+    }
+    .section p {
+        font-size: 16px;
+    }
+    .icons {
+        width: 95%;
+    }
+    .title h4 {
+        background-color: rgba(255, 255, 255, 0.377);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .icons {
+        width: 88%;
+    }
+    .block h6 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .section p {
+        font-size: 18px;
+    }
+}

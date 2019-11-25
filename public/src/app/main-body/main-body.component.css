@@ -26,7 +26,26 @@
 .dropdown-toggle::after {
     display: none;
 }
-
+.responsiveNav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.responsiveNav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.responsiveNav.scrolled {
+    background: rgba(46, 46, 46, 0.801);
+    z-index: 10;
+    transition: background 500ms;
+    border-radius: 0px 0px 20px 20px;
+}
 .backgroundAnimation li {
     position: absolute;
     display: block;
@@ -138,11 +157,6 @@
     .mainList {
         display: none;
     }
-    .responsiveNav {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
     .dropList {
         background-color: rgba(46, 46, 46, .8);
     }
@@ -152,19 +166,16 @@
     .dropList button:hover {
         background-color: rgba(37, 68, 243, .8)
     }
-
+    .widescreenOnly {
+        display: none;
+    }
 }
 @media only screen and (min-width:481px) {
     .bodyWrapper {
-        min-height: 850px;
+        min-height: 950px;
     }
     #dropdown1 {
         font-size: 22px;
-    }
-    .responsiveNav {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
     }
     .dropList {
         background-color: rgba(46, 46, 46, .8);
@@ -196,7 +207,7 @@
         top: 0;
         font-size: 28px;
         color: white;
-        list-style: none;
+        /* list-style: none; */
         font-weight: bold;
         font-family: 'Libre Baskerville', serif;
         display: inline-block;
@@ -218,11 +229,12 @@
         font-family: 'Libre Baskerville', serif;
     }
     
-    .nestedList li {
+    .mainList .nestedList li {
         transition: all .3s ease-in-out;
         margin: 20px 0px;
         font-size: 16px;
         width: 150px;
+        /* list-style: circle; */
     }
     .nestedList li:hover {
         transform: scale(1.2);
