@@ -6,6 +6,9 @@
         width: 15%;
         margin: 0% 4%;
         transition: .2s all ease-in-out;
+        border-radius: 50px;
+        border: 2px solid white;
+        background-color: rgba(190, 190, 190, .5);
     }
     .logos img:hover {
         transform: scale(1.1);
