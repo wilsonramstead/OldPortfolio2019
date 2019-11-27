@@ -13,18 +13,23 @@ export class MainBodyComponent implements OnInit {
   pageToShow: any;
 
   ngOnInit() {
-    this.listToShow = 'about';
-    this.pageToShow = 'aboutMe';
+    // this.listToShow = 'about';
+    this.pageToShow = 'intro';
     $(function () {
       $(document).scroll(function(){
         var $nav = $(".responsiveNav");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > ($(window).height() + 10));
+        $nav.toggleClass("scrolled", $(this).scrollTop() > ($($nav).height() + 10));
       });
     });
   }
 
   showList(string) {
-    this.listToShow = string;
+    if(this.listToShow === string) {
+      this.listToShow = '';
+    } else {
+      this.listToShow = string;
+
+    }
   }
   showPage(string) {
     this.pageToShow = string;

@@ -1,18 +1,30 @@
 
-    .logos {
-        display: inline-block;
-    }
-    .logos img {
-        width: 15%;
-        margin: 0% 4%;
-        transition: .2s all ease-in-out;
-        border-radius: 50px;
-        border: 2px solid white;
-        background-color: rgba(190, 190, 190, .5);
-    }
-    .logos img:hover {
-        transform: scale(1.1);
-    }
+.logos {
+    display: inline-block;
+    padding-top: 5px;
+}
+.logos img {
+    width: 15%;
+    margin: 0% 4%;
+    transition: .2s all ease-in-out;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: rgba(190, 190, 190, .5);
+    box-shadow: -10px -10px 25px 1px #000 inset, 0 0 10px 2px;
+}
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+.globe {
+    margin-top: 80px;
+    height: 250px;
+    width: 250px;
+    box-shadow: -20px -20px 50px 2px #000 inset,  0 0 20px 2px #000, 0 0 80px 10px rgb(101, 144, 201);
+}
+@keyframes spin {
+    100%{background-position: 100%};
+}
 @media only screen and (max-width: 480px) {
     .wrapper {
         height: 700px;
@@ -40,20 +52,6 @@
         margin: 0px auto;
         margin-top: 180px;
         padding-top: 5px;
-    }
-    .globe {
-        margin: 0px auto;
-        margin-top: 80px;
-        height: 250px;
-        width: 250px;
-        background-image: url(https://imgc.allpostersimages.com/img/print/u-g-PN13HF0.jpg?w=550&h=550&p=0);
-        border-radius: 50%;
-        background-size: cover;
-        box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
-        animation: spin 10s linear alternate infinite;
-    }
-    @keyframes spin {
-        100%{background-position: 100%};
     }
 }
 @media only screen and (min-width: 481px) {
@@ -93,21 +91,13 @@
     .signOff h6 {
         color: white;
         padding-top: 10px;
-        font-size: 1.5vw;
+        /* font-size: 1.5vw; */
+        font-size: 16px;
     }
     .globe {
-        margin: 0px auto;
         margin-top: 50px;
         height: 300px;
         width: 300px;
-        background-image: url(https://imgc.allpostersimages.com/img/print/u-g-PN13HF0.jpg?w=550&h=550&p=0);
-        border-radius: 50%;
-        background-size: cover;
-        box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
-        animation: spin 10s linear alternate infinite;
-    }
-    @keyframes spin {
-        100%{background-position: 100%};
     }
 }
 @media only screen and (min-width: 1024px) {

@@ -1,22 +1,23 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <div class="bodyWrapper">
+    <app-corner-title id="wsTitle" *ngIf="pageToShow != 'intro'"></app-corner-title>
     <!-- WIDESCREEN -->
     <ul class="mainList">
         <li (click)="showList('about')">About</li>
         <ul *ngIf="listToShow === 'about'" class="nestedList">
-            <li *ngIf="pageToShow === 'aboutMe'" class="activePage">About Me</li>
+            <li *ngIf="pageToShow === 'aboutMe'" class="glow">About Me</li>
             <li *ngIf="pageToShow != 'aboutMe'"  (click)="showPage('aboutMe')">About Me</li>
-            <li *ngIf="pageToShow === 'whatIDo'" class="activePage">What I do</li>
+            <li *ngIf="pageToShow === 'whatIDo'" class="glow">What I do</li>
             <li *ngIf="pageToShow != 'whatIDo'" (click)="showPage('whatIDo')">What I do</li>
         </ul>
         <li (click)="showList('portfolio')">Portfolio</li>
         <ul *ngIf="listToShow === 'portfolio'" class="nestedList">
-            <li *ngIf="pageToShow === 'projectUno'" class="activePage">The Wall</li>
+            <li *ngIf="pageToShow === 'projectUno'" class="glow">The Wall</li>
             <li *ngIf="pageToShow != 'projectUno'" (click)="showPage('projectUno')">The Wall</li>
-            <li *ngIf="pageToShow === 'projectDos'" class="activePage">Goal Tracker</li>
+            <li *ngIf="pageToShow === 'projectDos'" class="glow">Goal Tracker</li>
             <li *ngIf="pageToShow != 'projectDos'" (click)="showPage('projectDos')">Goal Tracker</li>
-            <li *ngIf="pageToShow === 'projectTres'" class="activePage">Gameflix</li>
+            <li *ngIf="pageToShow === 'projectTres'" class="glow">Gameflix</li>
             <li *ngIf="pageToShow != 'projectTres'" (click)="showPage('projectTres')">Gameflix</li>
         </ul>
 
@@ -24,13 +25,13 @@
         <!-- <li *ngIf="pageToShow != 'tech'" (click)="showPage('tech')">Tech</li> -->
         <li (click)="showList('tech')">Tech</li>
         <ul *ngIf="listToShow === 'tech'" class="nestedList">
-            <li *ngIf="pageToShow === 'favoriteTech'" class="activePage">My Favorite Tech</li>
+            <li *ngIf="pageToShow === 'favoriteTech'" class="glow">My Favorite Tech</li>
             <li *ngIf="pageToShow != 'favoriteTech'" (click)="showPage('favoriteTech')">My Favorite Tech</li>
-            <li *ngIf="pageToShow === 'thisWebsite'" class="activePage">This Website</li>
+            <li *ngIf="pageToShow === 'thisWebsite'" class="glow">This Website</li>
             <li *ngIf="pageToShow != 'thisWebsite'" (click)="showPage('thisWebsite')">This Website</li>
         </ul>
 
-        <li *ngIf="pageToShow === 'contactMe'" style="color: #2e2e2e; text-shadow: 2px 2px 4px white">Contact</li>
+        <li *ngIf="pageToShow === 'contactMe'" class="glow">Contact</li>
         <li *ngIf="pageToShow != 'contactMe'" (click)="showPage('contactMe')">Contact</li>
     </ul>
 
@@ -61,8 +62,9 @@
         <button (click)="showPage('contactMe')" class="btn btn-outline-primary" id="dropdown1">Contact</button>
     </div>
     <!-- ------------------------------------------------- -->
-
+    
     <div class="display">
+        <app-intro *ngIf="pageToShow === 'intro'"></app-intro>
         <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
         <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
@@ -72,6 +74,7 @@
         <app-technology *ngIf="pageToShow === 'favoriteTech'"></app-technology>
         <app-this-website *ngIf="pageToShow === 'thisWebsite'"></app-this-website>
     </div>
+    <app-corner-title id="ssTitle" *ngIf="pageToShow != 'intro'"></app-corner-title>
 
     <ul class="backgroundAnimation">
         <li></li>

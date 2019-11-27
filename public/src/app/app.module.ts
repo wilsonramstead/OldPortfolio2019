@@ -17,6 +17,8 @@ import { ProjectTresComponent } from './main-body/project-tres/project-tres.comp
 import { ContactMeComponent } from './main-body/contact-me/contact-me.component';
 import { TechnologyComponent } from './main-body/technology/technology.component';
 import { ThisWebsiteComponent } from './main-body/this-website/this-website.component';
+import { IntroComponent } from './main-body/intro/intro.component';
+import { CornerTitleComponent } from './main-body/corner-title/corner-title.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { ThisWebsiteComponent } from './main-body/this-website/this-website.comp
     ContactMeComponent,
     TechnologyComponent,
     ThisWebsiteComponent,
+    IntroComponent,
+    CornerTitleComponent,
   ],
   imports: [
     BrowserModule,

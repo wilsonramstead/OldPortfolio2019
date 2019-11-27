@@ -6,6 +6,13 @@
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
 }
+.globe {
+  margin: 0px auto;
+  background-image: url("/assets/imgs/globe.jpg");
+  border-radius: 50%;
+  background-size: cover;
+  animation: spin 10s linear alternate infinite;
+}
 .content {
   position: relative;
   color: white;
@@ -18,6 +25,7 @@
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
   cursor: pointer;
+  text-align: unset;
 }
 .seperator {
   color: #007bfe;
@@ -25,6 +33,7 @@
   font-weight: 300;
   display: inline-block;
   margin: 0px 4px;
+  text-align: center;
 }
 .sourceCode:hover {
   color: #007bfe;

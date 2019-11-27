@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainHeadComponent } from './main-head.component';
+import { CornerTitleComponent } from './corner-title.component';
 
-describe('MainHeadComponent', () => {
-  let component: MainHeadComponent;
-  let fixture: ComponentFixture<MainHeadComponent>;
+describe('CornerTitleComponent', () => {
+  let component: CornerTitleComponent;
+  let fixture: ComponentFixture<CornerTitleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainHeadComponent ]
+      declarations: [ CornerTitleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainHeadComponent);
+    fixture = TestBed.createComponent(CornerTitleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
