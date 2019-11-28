@@ -5,7 +5,6 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainHeadComponent } from './main-head/main-head.component';
 import { FooterComponent } from './footer/footer.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MainBodyComponent } from './main-body/main-body.component';
@@ -23,7 +22,6 @@ import { CornerTitleComponent } from './main-body/corner-title/corner-title.comp
 @NgModule({
   declarations: [
     AppComponent,
-    MainHeadComponent,
     FooterComponent,
     MainBodyComponent,
     AboutComponent,
