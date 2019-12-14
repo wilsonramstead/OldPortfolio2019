@@ -11,10 +11,6 @@
     z-index: 1;
     /* #d24846 */
     background: linear-gradient(-45deg, #a852ee, #e73c59, #23a6d5, #23d5ab);
-    /* background: linear-gradient(-45deg, #23d5ab, #23a6d5,#d24846, #894994); */
-    /* background: linear-gradient(-45deg, #f84343, #393ce1, #23a6d5, #30f1e8); */
-
-
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }

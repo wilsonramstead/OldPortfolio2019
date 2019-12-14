@@ -15,12 +15,6 @@ export class MainBodyComponent implements OnInit {
   ngOnInit() {
     // this.listToShow = 'about';
     this.pageToShow = 'intro';
-    $(function () {
-      $(document).scroll(function(){
-        var $nav = $(".responsiveNav");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > ($($nav).height() + 10));
-      });
-    });
   }
 
   showList(string) {
