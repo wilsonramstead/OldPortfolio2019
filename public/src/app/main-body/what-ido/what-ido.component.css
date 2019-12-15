@@ -36,22 +36,28 @@
     transform: rotate(-15deg) skew(-15deg, -15deg);
 }
 .outerCube span {
-    background: rgba(255, 255, 255, 0.3); border: 2px solid black;
+    background: rgba(255, 255, 255, 0.3);
+    border: 10px solid rgba(0, 0, 0);
 }
 #outerCubeTwo span {
-    background: rgba(0, 0, 0, 0.3); border: 2px solid white;
+    background: rgba(0, 0, 0, 0.3);
+    border: 10px solid white;
 }
 .middleCube span {
-    background: rgba(0, 0, 0, 0.5); border: 2px solid white;
+    background: rgba(0, 0, 0, 0.5);
+    border: 5px solid white;
 }
 #middleCubeTwo span {
-    background: rgba(255, 255, 255, 0.5); border: 2px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    border: 5px solid black;
 }
 .innerCube span {
-    background: rgba(255, 255, 255); border: 2px solid black;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
 }
 #innerCubeTwo span {
-    background: rgba(0, 0, 0); border: 2px solid white;
+    background: rgba(0, 0, 0);
+    border: 2px solid white;
 
 }
 /* ---------------------------------- */

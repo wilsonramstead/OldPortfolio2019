@@ -13,10 +13,8 @@ export class MainBodyComponent implements OnInit {
   pageToShow: any;
 
   ngOnInit() {
-    // this.listToShow = 'about';
     this.pageToShow = 'intro';
   }
-
   showList(string) {
     if(this.listToShow === string) {
       this.listToShow = '';
@@ -26,7 +24,8 @@ export class MainBodyComponent implements OnInit {
     }
   }
   showPage(string) {
-    this.pageToShow = string;
+    $('.display').fadeOut(500);
+    setTimeout(() => { this.pageToShow = string; }, 500);
+    $('.display').fadeIn(500);
   }
-
 }
