@@ -20,7 +20,6 @@ export class MainBodyComponent implements OnInit {
       this.listToShow = '';
     } else {
       this.listToShow = string;
-
     }
   }
   showPage(string) {
