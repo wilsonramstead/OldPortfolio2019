@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 .glow {
     color: #2e2e2e;
-    text-align: center;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;

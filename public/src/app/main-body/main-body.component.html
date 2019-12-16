@@ -64,15 +64,15 @@
     <!-- ------------------------------------------------- -->
     
     <div class="display">
-        <app-intro id="component" *ngIf="pageToShow === 'intro'"></app-intro>
-        <app-about id="component" *ngIf="pageToShow === 'aboutMe'"></app-about>
-        <app-what-ido id="component" *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
-        <app-project-uno id="component" *ngIf="pageToShow === 'projectUno'"></app-project-uno>
-        <app-project-dos id="component" *ngIf="pageToShow === 'projectDos'"></app-project-dos>
-        <app-project-tres id="component" *ngIf="pageToShow === 'projectTres'"></app-project-tres>
-        <app-contact-me id="component" *ngIf="pageToShow === 'contactMe'"></app-contact-me>
-        <app-technology id="component" *ngIf="pageToShow === 'favoriteTech'"></app-technology>
-        <app-this-website id="component" *ngIf="pageToShow === 'thisWebsite'"></app-this-website>
+        <app-intro *ngIf="pageToShow === 'intro'"></app-intro>
+        <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
+        <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
+        <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
+        <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>
+        <app-project-tres *ngIf="pageToShow === 'projectTres'"></app-project-tres>
+        <app-contact-me *ngIf="pageToShow === 'contactMe'"></app-contact-me>
+        <app-technology *ngIf="pageToShow === 'favoriteTech'"></app-technology>
+        <app-this-website *ngIf="pageToShow === 'thisWebsite'"></app-this-website>
     </div>
     <app-corner-title id="ssTitle" *ngIf="pageToShow != 'intro'"></app-corner-title>
 

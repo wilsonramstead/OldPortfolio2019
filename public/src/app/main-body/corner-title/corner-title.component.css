@@ -3,7 +3,6 @@
     padding: 4px;
     color: black;
     border-radius: 10px;
-    text-align: center;
 }
 .cornerTitle h1 {
     font-size: 30px;
@@ -23,7 +22,7 @@
 @media only screen and (min-width: 481px) {
     .cornerTitle {
         border-top: 2px solid black;
-        text-align: right;
+        text-align: center;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -35,5 +34,6 @@
         border-bottom: 1px solid white;
         border-top: none;
         text-align: right;
+        padding-right: 10px;
     }
 }
