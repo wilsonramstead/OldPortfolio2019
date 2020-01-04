@@ -8,7 +8,9 @@
     position: relative;
     z-index: 1;
     /* #d24846 */
-    background: linear-gradient(-45deg, #a852ee, #e73c59, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #643fbb, #948e8f, #a7cfe4, #0dabe4); */
+    background: linear-gradient(-45deg, #be0202, #b9b7b7, #c6d6df, #05a7e2);
+    /* background: linear-gradient(-45deg, #a852ee, #e73c59, #23a6d5, #23d5ab); */
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
@@ -38,21 +40,6 @@
     padding: 25px;
     animation: pulse 3s forwards;
 }
-/* .component {
-    animation: pulse 5s ease-in;
-}
-@keyframes pulse {
-    0% {
-        height: 0%;
-        width: 0%;
-        transform: scale(0);
-    }
-    100% {
-        height: 80vh;
-        width: 65%;
-        transform: scale(1);
-    }
-} */
 
 .dropdown-toggle::after {
     display: none;
@@ -170,7 +157,7 @@
 .display {
     height: 80vh;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 
@@ -278,10 +265,11 @@
         top: 0;
         font-size: 28px;
         color: white;
+        margin-left: 20px;
         font-weight: bold;
         font-family: 'Libre Baskerville', serif;
         display: inline-block;
-        border: 5px solid white;
+        border-left: 3px solid white;
         border-radius: 25px;
     }
     .mainList li {
@@ -319,14 +307,14 @@
         border-radius: 25px;
         display: inline-block;
         position: relative;
-        left: 10%;
-        top: 12vh;
+        left: 6%;
+        top: 10vh;
         vertical-align: top;
         padding: 25px;
-        border-top: 4px solid white;
-        border-bottom: 4px solid white;
+        /* border-top: 4px solid white; */
+        /* border-bottom: 4px solid white; */
         /* background-color: rgba(255, 255, 255, 0.1); */
-        background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2));
+        /* background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2)); */
         overflow: auto;
     }
     @keyframes animate {
