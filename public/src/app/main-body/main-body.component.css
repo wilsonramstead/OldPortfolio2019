@@ -39,6 +39,7 @@
     border-radius: 25px;
     padding: 25px;
     animation: pulse 3s forwards;
+    overflow: auto;
 }
 
 .dropdown-toggle::after {
@@ -315,7 +316,7 @@
         /* border-bottom: 4px solid white; */
         /* background-color: rgba(255, 255, 255, 0.1); */
         /* background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2)); */
-        overflow: auto;
+        /* overflow: auto; */
     }
     @keyframes animate {
         0% {
