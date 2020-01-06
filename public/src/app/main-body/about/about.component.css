@@ -6,23 +6,68 @@
     text-align: left;
     margin-left: 5%;
 }
+.nestedHeader {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5%;
+    text-align: left;
+}
+.jobTitle {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+.aboutMeText .link {
+    color: #007bfe;
+}
+.aboutMeText .link:hover {
+    color: #005bbd;
+    text-decoration: underline;
+}
 
 @media only screen and (max-width:480px) {
     .aboutMeText {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .labelOne {
+        text-align: center;
+    }
+    .date {
+        display: block;
+        text-align: left;
+    }
+    .miniHr {
+        width: 50%;
+    }
+    .githubLink {
+        margin-bottom: 50px;
     }
 }
 @media only screen and (min-width:481px) {
     .aboutMeText {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    .labelOne {
+        text-align: left;
+    }
+    .leftLarge {
+        text-align: left;
+    }
+    .date {
+        float: right;
+        margin-right: 10%;
+    }
+    .miniHr {
+        display: none;
     }
 }
 @media only screen and (min-width:1024px) {
     .info {
         font-size: 16px;
     }
-    .aboutMeText {
-        /* text-align: left; */
-        font-size: 18px;
+    .leftLarge {
+        text-align: left;
     }
 }

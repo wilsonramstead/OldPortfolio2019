@@ -65,7 +65,7 @@
     
     <div class="display">
         <app-intro *ngIf="pageToShow === 'intro'"></app-intro>
-        <app-about *ngIf="pageToShow === 'aboutMe'"></app-about>
+        <app-about (navLink)="showPage($event); showList('tech')" *ngIf="pageToShow === 'aboutMe'"></app-about>
         <app-what-ido *ngIf="pageToShow === 'whatIDo'"></app-what-ido>
         <app-project-uno *ngIf="pageToShow === 'projectUno'"></app-project-uno>
         <app-project-dos *ngIf="pageToShow === 'projectDos'"></app-project-dos>

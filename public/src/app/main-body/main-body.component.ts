@@ -7,7 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./main-body.component.css']
 })
 export class MainBodyComponent implements OnInit {
-
+  
   constructor() { }
   listToShow: any;
   pageToShow: any;

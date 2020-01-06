@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  @Output() navLink = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+  }
+  callParent(string) {
+    this.navLink.next(string);
   }
 }
