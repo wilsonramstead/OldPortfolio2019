@@ -2,8 +2,9 @@
 .aboutMeText {
     color: white;
     font-family: 'Barlow', sans-serif;
-    line-height: 50px;
-    text-align: center;
+    line-height: 2;
+    text-align: left;
+    margin-left: 5%;
 }
 
 @media only screen and (max-width:480px) {
@@ -22,6 +23,6 @@
     }
     .aboutMeText {
         /* text-align: left; */
-        font-size: 26px;
+        font-size: 18px;
     }
 }
