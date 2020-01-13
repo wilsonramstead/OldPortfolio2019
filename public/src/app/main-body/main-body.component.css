@@ -11,8 +11,21 @@
     /* background: linear-gradient(-45deg, #643fbb, #948e8f, #a7cfe4, #0dabe4); */
     /* background: linear-gradient(-45deg, #be0202, #b9b7b7, #c6d6df, #05a7e2); */
     /* background: linear-gradient(-45deg, #a852ee, #e73c59, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #242424, #afafaf, #143388);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
 }
-
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 #dropdown1 {
     border: none;
     font-weight: bold;
@@ -39,8 +52,7 @@
     position: sticky;
     top: 0;
 }
-<<<<<<< HEAD
-=======
+
 .responsiveNav {
     display: inline-block;
     width: 100%;
@@ -48,7 +60,6 @@
     position: sticky;
     top: 0;
 }
->>>>>>> parent of 24c1b35... added alerts to icons for technology component (mobile)
 .responsiveNav.scrolled {
     background: rgba(46, 46, 46, 0.801);
     z-index: 10;
@@ -150,25 +161,19 @@
     width: 100%;
     /* overflow: auto; */
 }
+@keyframes animate {
+    0% {
+        transform: translateY(-900px) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px) scale(2.5);
+        opacity: 0;
+    }
+}
 
 
 @media only screen and (max-width:480px) {
-    .bodyWrapper {
-        background: linear-gradient(-45deg, #be0202, #d4d4d4, #05a7e2);
-        background-size: 400% 400%;
-        animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
     #dropdown1 {
         font-size: 18px;
     }
@@ -205,37 +210,11 @@
     .backgroundAnimation li:nth-child(7) {
         display: none;
     }
-    @keyframes animate {
-        0% {
-            transform: translateY(-1125px) scale(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(-200px) scale(2.5);
-            opacity: 0;
-        }
-    }
     #wsTitle {
         display: none;
     }
 }
 @media only screen and (min-width:481px) {
-    .bodyWrapper {
-        background: linear-gradient(-45deg, #be0202, #d4d4d4, #05a7e2);
-        background-size: 400% 400%;
-        animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
     #dropdown1 {
         font-size: 22px;
     }
@@ -250,16 +229,6 @@
     }
     .dropList button:hover {
         background-color: rgba(37, 68, 243, .8)
-    }
-    @keyframes animate {
-        0% {
-            transform: translateY(-850px) scale(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(-200px) scale(2.5);
-            opacity: 0;
-        }
     }
     #wsTitle {
         display: none;
@@ -330,16 +299,6 @@
         /* background-color: rgba(255, 255, 255, 0.1); */
         /* background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2)); */
         /* overflow: auto; */
-    }
-    @keyframes animate {
-        0% {
-            transform: translateY(-950px) scale(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(-100px) scale(2.5);
-            opacity: 0;
-        }
     }
     #ssTitle {
         display: none;
