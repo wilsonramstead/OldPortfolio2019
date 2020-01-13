@@ -11,15 +11,38 @@
     /* background: linear-gradient(-45deg, #643fbb, #948e8f, #a7cfe4, #0dabe4); */
     /* background: linear-gradient(-45deg, #be0202, #b9b7b7, #c6d6df, #05a7e2); */
     /* background: linear-gradient(-45deg, #a852ee, #e73c59, #23a6d5, #23d5ab); */
+    /* background: linear-gradient(-45deg, #be0202, #d4d4d4, #05a7e2); */
+    background: linear-gradient(-45deg, #242424, #afafaf, #143388);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
 }
-
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* .fixedHeader {
+    position: sticky;
+    top: 0;
+}
+.fixedHeader.scrolled {
+    background: rgb(222, 192, 222);
+    transition: background 500ms;
+} */
 #dropdown1 {
     border: none;
     font-weight: bold;
     color: white;
 }
 .display {
-    height: 60vh;
+    /* height: 60vh; */
+    height: 80vh;
     width: 100%;
     /* background-color: pink; */
     /* border: 3px solid black; */
@@ -27,6 +50,7 @@
     padding: 25px;
     animation: pulse 3s forwards;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-toggle::after {
@@ -39,12 +63,9 @@
     position: sticky;
     top: 0;
 }
-.responsiveNav {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    position: sticky;
-    top: 0;
+.responsiveNav .dropList {
+    position: relative;
+    z-index: 6;
 }
 .responsiveNav.scrolled {
     background: rgba(46, 46, 46, 0.801);
@@ -52,6 +73,7 @@
     transition: background 500ms;
     border-radius: 0px 0px 20px 20px;
 }
+
 .backgroundAnimation li {
     position: absolute;
     display: block;
@@ -68,104 +90,176 @@
 }
 .backgroundAnimation li:nth-child(1) {
     left: 90%;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     animation-delay: 0s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(2) {
     left: 8%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     animation-delay: 1s;
-    animation-duration: 20s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(3) {
     left: 64%;
-    width: 90px;
-    height: 90px;
+    width: 40px;
+    height: 40px;
     animation-delay: 2s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(4) {
     left: 53%;
-    width: 140px;
-    height: 140px;
+    width: 20px;
+    height: 20px;
     animation-delay: 3s;
-    animation-duration: 25s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(5) {
     left: 72%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     animation-delay: 6.5s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(6) {
     left: 15%;
-    width: 150px;
-    height: 150px;
+    width: 20px;
+    height: 20px;
     animation-delay: 5s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(7) {
     left: 80%;
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
     animation-delay: 9s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(8) {
     left: 12%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     animation-delay: 7s;
-    animation-duration: 20s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(9) {
     left: 76%;
-    width: 70px;
-    height: 70px;
+    width: 35px;
+    height: 35px;
     animation-delay: 15s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(10) {
     left: 35%;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     animation-delay: 10s;
-    animation-duration: 25s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(11) {
     left: 88%;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     animation-delay: 12s;
+    animation-duration: 16s;
 }
 .backgroundAnimation li:nth-child(12) {
     left: 25%;
-    width: 90px;
-    height: 90px;
+    width: 30px;
+    height: 30px;
     animation-delay: 16s;
+    animation-duration: 16s;
 }
-.display {
-    height: 80vh;
-    width: 100%;
-    /* overflow: auto; */
+.backgroundAnimation li:nth-child(13) {
+    left: 24%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(14) {
+    left: 80%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(15) {
+    left: 8%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 3s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(16) {
+
+    left: 56%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 4s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(17) {
+    left: 32%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 5s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(18) {
+    left: 48%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 6s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(19) {
+    left: 96%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 7s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(20) {
+    left: 64%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 8s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(21) {
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 9s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(22) {
+    left: 72%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 10s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(23) {
+    left: 16%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 11s;
+    animation-duration: 10s;
+}
+.backgroundAnimation li:nth-child(24) {
+    left: 88%;
+    width: 10;
+    height: 10px;
+    animation-delay: 12s;
+    animation-duration: 10s;
 }
 
 
 @media only screen and (max-width:480px) {
-    .bodyWrapper {
-        background: linear-gradient(-45deg, #be0202, #d4d4d4, #05a7e2);
-        background-size: 400% 400%;
-        animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
     #dropdown1 {
         font-size: 18px;
     }
@@ -204,11 +298,11 @@
     }
     @keyframes animate {
         0% {
-            transform: translateY(-1125px) scale(0);
+            transform: translateY(-900px) scale(0);
             opacity: 1;
         }
         100% {
-            transform: translateY(-200px) scale(2.5);
+            transform: translateY(0px) scale(2.5);
             opacity: 0;
         }
     }
@@ -217,22 +311,6 @@
     }
 }
 @media only screen and (min-width:481px) {
-    .bodyWrapper {
-        background: linear-gradient(-45deg, #be0202, #d4d4d4, #05a7e2);
-        background-size: 400% 400%;
-        animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
     #dropdown1 {
         font-size: 22px;
     }

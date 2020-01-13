@@ -33,41 +33,41 @@
         </div>
         <div class="mobile">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/HTML.png" class="col-4 col-sm-2" alt="HTML icon">
+            <img style="margin-top: 10px;" (click)="infoAlert('html')" src="assets/imgs/icons/HTML.png" class="col-4 col-sm-2" alt="HTML icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/CSS.png" class="col-4 col-sm-2" alt="CSS icon">
+            <img (click)="infoAlert('css')" src="assets/imgs/icons/CSS.png" class="col-4 col-sm-2" alt="CSS icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/JavaScript.png" class="col-4 col-sm-2" alt="JavaScript icon">
+            <img (click)="infoAlert('javascript')" src="assets/imgs/icons/JavaScript.png" class="col-4 col-sm-2" alt="JavaScript icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/bootstrap.png" class="col-4 col-sm-2" alt="Bootstrap icon">
+            <img (click)="infoAlert('bootstrap')" src="assets/imgs/icons/bootstrap.png" class="col-4 col-sm-2" alt="Bootstrap icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/jQuery.png" class="col-4 col-sm-2" alt="jQuery icon">
-            <div class="blank"></div>        
-            <img (click)="changeTech('')" src="assets/imgs/icons/ajax.png" class="col-4 col-sm-2" alt="Ajax icon">
+            <img (click)="infoAlert('jquery')" src="assets/imgs/icons/jQuery.png" class="col-4 col-sm-2" alt="jQuery icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/angular.png" class="col-4 col-sm-2" alt="angular icon">
+            <img (click)="infoAlert('ajax')" src="assets/imgs/icons/ajax.png" class="col-4 col-sm-2" alt="Ajax icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/MEAN.png" class="col-4 col-sm-2" alt="MEAN icon">
+            <img (click)="infoAlert('angular')" src="assets/imgs/icons/angular.png" class="col-4 col-sm-2" alt="angular icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/nodejs.png" class="col-4 col-sm-2" alt="nodejs icon">
+            <img (click)="infoAlert('mean')" src="assets/imgs/icons/MEAN.png" class="col-4 col-sm-2" alt="MEAN icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/expressjs.png" class="col-4 col-sm-2" alt="expressjs icon">
+            <img (click)="infoAlert('node')" src="assets/imgs/icons/nodejs.png" class="col-4 col-sm-2" alt="nodejs icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/mongodb.png" class="col-4 col-sm-2" alt="mongodb icon">
+            <img (click)="infoAlert('express')" src="assets/imgs/icons/expressjs.png" class="col-4 col-sm-2" alt="expressjs icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/c-sharp.png" class="col-4 col-sm-2" alt="c# icon">
+            <img (click)="infoAlert('mongodb')" src="assets/imgs/icons/mongodb.png" class="col-4 col-sm-2" alt="mongodb icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/python.png" class="col-4 col-sm-2" alt="python icon">
+            <img (click)="infoAlert('asp')" src="assets/imgs/icons/c-sharp.png" class="col-4 col-sm-2" alt="c# icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/django.png" class="col-4 col-sm-2" alt="django icon">
+            <img (click)="infoAlert('python')" src="assets/imgs/icons/python.png" class="col-4 col-sm-2" alt="python icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/mysql.png" class="col-4 col-sm-2" alt="mysql icon">
+            <img (click)="infoAlert('django')" src="assets/imgs/icons/django.png" class="col-4 col-sm-2" alt="django icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/sqlite.png" class="col-4 col-sm-2" alt="sqlite icon">
+            <img (click)="infoAlert('mysql')" src="assets/imgs/icons/mysql.png" class="col-4 col-sm-2" alt="mysql icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" class="ubuntu" src="assets/imgs/icons/ubuntu.png" class="col-4 col-sm-2" alt="ubuntu icon">
+            <img (click)="infoAlert('sqlite')" src="assets/imgs/icons/sqlite.png" class="col-4 col-sm-2" alt="sqlite icon">
             <div class="blank"></div>
-            <img (click)="changeTech('')" src="assets/imgs/icons/github.png" class="col-4 col-sm-2" alt="github icon">
+            <img style="margin-bottom: 50px;" (click)="infoAlert('ubuntu')" class="ubuntu" src="assets/imgs/icons/ubuntu.png" class="col-4 col-sm-2" alt="ubuntu icon">
+            <div class="blank"></div>
+            <img style="margin-bottom: 50px;" (click)="infoAlert('github')" src="assets/imgs/icons/github.png" class="col-4 col-sm-2" alt="github icon">
         </div>
     </div>
     <div class="techInfo">
@@ -78,7 +78,7 @@
         <div *ngIf="showTech === 'html'" class="techText">
             <h3>HTML</h3>
             <hr>
-            <p>HTML stands for Hyper Text Markup Language. Html is the standard markup language for Web pages, represented by element tags. These tags include headings and paragraphs, images, links, lists, tables, forms...etc.</p>
+            <p>HTML stands for Hyper Text Markup Language. Html is the standard markup language for Web pages used to build the structure/content, represented by element tags. These tags include headings and paragraphs, images, links, lists, tables, forms...etc.</p>
         </div>
 
         <img *ngIf="showTech === 'css'" src="assets/imgs/icons/CSS.png" class="tempIcon" alt="CSS icon">

@@ -14,6 +14,16 @@ export class MainBodyComponent implements OnInit {
 
   ngOnInit() {
     this.pageToShow = 'intro';
+    this.fixedHeader();
+    $(document).scroll(function(){
+      var $nav = $(".fixedHeader");
+      console.log("scrollTop: ", $(this).scrollTop());
+      console.log("nav.height: ", $nav.height());
+      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      $nav.toggleClass(() => {
+        $(this).css("background", "pink")
+      }, $(this).scrollTop() > $nav.height());
+    });
   }
   showList(string) {
     if(this.listToShow === string) {
@@ -26,5 +36,8 @@ export class MainBodyComponent implements OnInit {
     $('.display').fadeOut(500);
     setTimeout(() => { this.pageToShow = string; }, 500);
     $('.display').fadeIn(500);
+  }
+  fixedHeader() {
+
   }
 }
