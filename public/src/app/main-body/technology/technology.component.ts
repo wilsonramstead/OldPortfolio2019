@@ -25,7 +25,7 @@ export class TechnologyComponent implements OnInit {
     } else if(string === 'css') {
         alert("CSS stands for 'Cascading Style Sheet'. Cascading style sheets are used to format the layout of Web pages. They can be used to define element sizes, margins, colors, and other aspects of Web pages that previously could only be defined in a page's HTML.");
     } else if(string === 'javascript') {
-        alert("Javscript is a scripting/programming language, primarily used on the web to render web pages in an interactive and dynamic fashion. Javascript can be used to update and change both HTML and CSS. Javascript can also be used to calculate, manipulate, and validate data.");
+        alert("Javascript is a scripting/programming language, primarily used on the web to render web pages in an interactive and dynamic fashion. Javascript can be used to update and change both HTML and CSS. Javascript can also be used to calculate, manipulate, and validate data.");
     } else if(string === 'bootstrap') {
         alert("Bootstrap is a popular CSS Framework for developing responsive and mobile-first websites. Bootstrap is a library containg styling classes and js functions, to be imported into a project and used within html elements.");
     } else if(string === 'jquery') {
