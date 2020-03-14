@@ -26,6 +26,13 @@
     color: #005bbd;
     text-decoration: underline;
 }
+.githubLink {
+    color: #ff784f;
+}
+.REheader {
+    display: inline-block;
+    margin-right: 20px;
+}
 
 @media only screen and (max-width:480px) {
     .aboutMeText {
